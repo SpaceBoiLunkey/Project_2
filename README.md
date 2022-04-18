@@ -59,5 +59,5 @@ SOFTWARE.
 
 ## Database
 
-   - [db-schema](FILE PATH HERE <<-----------)
-   - [SQL-Queries](FILE PATH HERE <<-----------)
+   - [ERD](FILE PATH HERE <<-----------)
+   - [Database](FILE PATH HERE <<-----------)
