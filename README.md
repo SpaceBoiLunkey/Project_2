@@ -11,7 +11,7 @@
    - [License](#license)
    - [Database](#Database)
 
-## 
+## Description
 
 - When you first visit the website, you will be viewing the guest version of the
     homepage on the home screen.
