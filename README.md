@@ -30,7 +30,7 @@ Collaborators and GitHub
 
    - [Donald Lopez](https://github.com/username here <<-----------)
    - [Drael](https://github.com/username here <<-----------)
-   - [K. Kal](https://github.com/username here <<-----------)
+   - [K. Kal](https://github.com/@SpaceBoiLunkey)
    - [Eric Vara](https://github.com/vara78)
 
 ## License
