@@ -29,7 +29,7 @@
 Collaborators and GitHub
 
    - [Donald Lopez](https://github.com/username here <<-----------)
-   - [Drael](https://github.com/username here <<-----------)
+   - [Drael Davidson](https://github.com/draeldavidson)
    - [Kalvin McClure](https://github.com/SpaceBoiLunkey)
    - [Eric Vara](https://github.com/vara78)
 
