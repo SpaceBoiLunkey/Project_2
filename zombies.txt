@@ -1,0 +1,21 @@
+Name it as following: PROJECT_NAME [members initials separated by comma].
+Provide a project name and a brief description of your project (no more than four [4] lines).
+Define four (4) additional requirements on top of the mandatory ones.
+Note that there is one of the mandatories that you have to modify.
+
+
+Zombie Apocalypse [K, E, D, D]
+
+User can login
+User Can Start Game, Win, Lose, and Restart 
+Choose between optios to go further in the game
+User can logout
+
+
+Deadlines!!!
+
+19th-> Project name and Requirement Document
+
+20th-> ERD,Flow Digram and Structure of your project Frontend should be ready and pushed in github
+
+25th-> Backend Project Structure
