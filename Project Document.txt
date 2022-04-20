@@ -1,7 +1,8 @@
 
 Zombie Apocalypse [K, E, D, D]
 
-User can 
+User can:
+
 login/logout
 Can Start Game, Win, Lose, and Restart 
 Choose between options to go further in the game
