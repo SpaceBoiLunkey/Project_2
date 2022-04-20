@@ -1,4 +1,4 @@
-# Zombie Apocolypse
+# Zombie Apocalypse
    - [Logo]((FILE PATH HERE <<-----------))
 
 ## Description
