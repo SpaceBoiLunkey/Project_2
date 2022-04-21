@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Game extends React.Component {
+class ScenceOne extends React.Component {
   render() {
     return (
       <div className="game">
