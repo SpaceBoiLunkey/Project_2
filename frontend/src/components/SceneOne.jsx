@@ -25,4 +25,4 @@ class ScenceOne extends React.Component {
   }
 }
 
-export default Game;
+export default ScenceOne;
