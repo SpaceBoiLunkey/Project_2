@@ -1,0 +1,46 @@
+PROJECT 2
+
+How To Merge Master into Branch
+
+git checkout main- switches to the main branch
+git pull- pulls any main branch changes
+git checkout branchname- switches to the branch
+git merge main- merges main changes to your branch
+git push- pushes branch changes
+
+
+
+PGADMIN
+
+    CREATE DATABASE projecttwo
+
+TABLES
+
+    CREATE TABLE public.users
+    (
+        id bigserial NOT NULL,
+        username character varying,
+        password character varying,
+        PRIMARY KEY ("userId")
+    );
+
+
+    CREATE TABLE public.userdetails
+    (
+        id bigserial,
+        username character varying NOT NULL,
+        password character varying,
+        firstname character varying,
+        lastname character varying,
+        email character varying,
+        savepoint bigint,
+        PRIMARY KEY (username),
+        
+    );
+
+
+const onSubmit = (event) => {
+    event.preventDefault();
+    handleSubmit(text);
+    setText("");
+  };
