@@ -35,7 +35,7 @@ const [fadeProp, setFadeProp] = useState({
 }
 
 Fader.defaultProps = {
-    text:'Make you choice!'
+    text:'Make your choice!'
    
 }
 
