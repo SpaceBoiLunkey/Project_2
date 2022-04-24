@@ -1,16 +1,19 @@
 import React from 'react';
-
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
 import Login from "./components/Login";
 import About from './components/About';
 import Start from './components/Start';
 import ChapterOne from './story/ChapterOne';
 import ChapterTwo from './story/ChapterTwo';
 import ChapterThree from './story/ChapterThree';
-
+import ChapterFour from './story/ChapterFour';
+import ChapterFive from './story/ChapterFive';
+import ChapterSix from './story/ChapterSix';
+import ChapterSeven from './story/ChapterSeven';
+import ChapterEight from './story/ChapterEight';
+import ChapterNine from './story/ChapterNine';
 
 
 function App() {
@@ -54,8 +57,12 @@ function App() {
             <Route path="/ChapterOne" component={ChapterOne} />
             <Route path="/ChapterTwo" component={ChapterTwo} />
             <Route path="/ChapterThree" component={ChapterThree} />
-            {/* <Route path="/ChapterFour" component={ChapterFour} />
-            <Route path="/ChapterFive" component={ChapterFive} /> */}
+            <Route path="/ChapterFour" component={ChapterFour} />
+            <Route path="/ChapterFive" component={ChapterFive} />
+            <Route path="/ChapterSix" component={ChapterSix} />
+            <Route path="/ChapterSeven" component={ChapterSeven} />
+            <Route path="/ChapterEight" component={ChapterEight} />
+            <Route path="/ChapterNine" component={ChapterNine} />
        </Switch>
       
     </div>
