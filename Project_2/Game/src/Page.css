@@ -1,0 +1,68 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+/* base styles */
+body {
+  min-height: 100vh;
+ 
+  font-weight: 400;
+  font-family: sans-serif;
+  background: #12c2e9;  /* fallback for old browsers */
+  background: -webkit-linear-gradient( #4ff695, #c471ed, #720b89);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient( #4ff695, #834b9f, #490758); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+h1 {
+  font-size: 600%; 
+    color: rgb(117, 42, 121);
+  
+}
+h2 {
+  font-size:""; 
+    color: rgb(168, 186, 5);
+  
+}
+h3 {
+  font-size:200%; 
+    color: rgb(54, 24, 87);
+  
+}
+h4 {
+  font-size:""; 
+    color: rgb(135, 225, 176);
+  
+}
+
+.App {
+  max-width: 1460px;
+  margin: 40px auto;
+  margin-top: 90px;
+}
+.bg {
+
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.pg {
+
+  height: 60vh;
+  background-position: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.fade-in {
+  transition: opacity 1s ease;
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.font-link {
+  font-family: 'Hanalei Fill', cursive;
+}
