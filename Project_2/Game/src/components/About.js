@@ -7,7 +7,7 @@ function About() {
     <div className="bg"style={{ backgroundImage: `url(${background})` }}>
   <div className="flex justify-content max-w-xs mx-auto mt-5">
       <h1>Zombie Apocolypse</h1>
-    
+      <button className="">Start New Game</button>
       </div>
     </div>
   );
