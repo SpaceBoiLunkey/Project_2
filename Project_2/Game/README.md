@@ -1,37 +1,37 @@
 # Zombie Apocalypse
-   - [Logo]((FILE PATH HERE <<-----------))
+
+- [Logo]((FILE PATH HERE <<-----------))
 
 ## Description
 
-
 ## Table of Contents
 
-   - [Usage](#usage)
-   - [Credits](#credits)
-   - [License](#license)
-   - [Database](#Database)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Database](#Database)
 
 ## Description
 
 - When you first visit the website, you will be viewing the guest version of the
-    homepage on the home screen.
+  homepage on the home screen.
 - You will be able to travel about the website and view categories, topics, and
-    conversations as a visitor.
+  conversations as a visitor.
 - You can either log in if you're an existing user or create an account if you're
-    a new user.
+  a new user.
 - You will be taken to the homepage after registering as a new user or logging in,
-    where you can now communicate with others.
+  where you can now communicate with others.
 - You will be able to start new topics, add new posts, respond to other users, and
-    logout as a user.
+  logout as a user.
 
 ## Credits
 
 Collaborators and GitHub
 
-   - [Donald Lopez](https://github.com/username here <<-----------)
-   - [Drael Davidson](https://github.com/draeldavidson)
-   - [Kalvin McClure](https://github.com/SpaceBoiLunkey)
-   - [Eric Vara](https://github.com/vara78)
+- [Donald Lopez](https://github.com/donaldlopez82)
+- [Drael Davidson](https://github.com/draeldavidson)
+- [Kalvin McClure](https://github.com/SpaceBoiLunkey)
+- [Eric Vara](https://github.com/vara78)
 
 ## License
 
@@ -59,5 +59,5 @@ SOFTWARE.
 
 ## Database
 
-   - [ERD](FILE PATH HERE <<-----------)
-   - [Database](FILE PATH HERE <<-----------)
+- [ERD](FILE PATH HERE <<-----------)
+- [Database](FILE PATH HERE <<-----------)
