@@ -12,5 +12,5 @@ function About() {
     </div>
   );
 }
-
+//is this button supposed to say "Start New Game"?
 export default About
