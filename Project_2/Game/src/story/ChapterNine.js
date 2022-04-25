@@ -6,7 +6,7 @@ import Fader from './Fader'
 export default function ChapterNine() {
         return (
             <form  className="flex justify-content max-w-xs mx-auto mt-5" >
-                 <div className="">
+                 <div className="pt-5">
                         <div class="text-center">   
                             <h1 className="font-link">Zombie Apocolypse</h1>
                         </div>

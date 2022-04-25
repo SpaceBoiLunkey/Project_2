@@ -7,7 +7,7 @@ function Start() {
 
   return (
 
-    <div className="col text-center">
+    <div className="col text-center pt-5">
        <h1 className="font-link">Zombie Apocolypse</h1>
        <br></br>
        <div class="container">
