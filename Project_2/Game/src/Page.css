@@ -34,6 +34,11 @@ h4 {
     color: rgb(135, 225, 176);
   
 }
+h5 {
+  font-size:""; 
+    color: rgb(135, 225, 176);
+  
+}
 
 .App {
   max-width: 1460px;
@@ -46,6 +51,7 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
  
 }
 .pg {
