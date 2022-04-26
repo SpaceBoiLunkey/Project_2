@@ -3,5 +3,5 @@ import com.zombie.apocalypse.data.User;
 import java.util.*;
 
 public interface UserService {
-    public List<User> getUserWithId(Long id);
+    public List<User> getByUserId(Integer id);
 }
