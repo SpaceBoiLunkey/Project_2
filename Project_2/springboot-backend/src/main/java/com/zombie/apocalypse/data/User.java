@@ -1,7 +1,7 @@
 package com.zombie.apocalypse.data;
 
 public class User {
-    private Long userId;
+    private Integer userId;
     private Game gameId;
     private String userName;
     private String userPassword;
@@ -9,18 +9,18 @@ public class User {
     public User() {
     }
 
-    public User(Long userId, Game gameId, String userName, String userPassword) {
+    public User(Integer userId, Game gameId, String userName, String userPassword) {
         this.userId = userId;
         this.gameId = gameId;
         this.userName = userName;
         this.userPassword = userPassword;
     }
 
-    public Long getUserId() {
+    public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(Long userId) {
+    public void setUserId(Integer userId) {
         this.userId = userId;
     }
 
