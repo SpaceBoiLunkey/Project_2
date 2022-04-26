@@ -1,22 +1,22 @@
 package com.zombie.apocalypse.data;
 
 public class Game {
-    private Long gameId;
+    private Integer gameId;
     private Chapter chapterId;
 
     public Game() {
     }
 
-    public Game(Long gameId, Chapter chapterId) {
+    public Game(Integer gameId, Chapter chapterId) {
         this.gameId = gameId;
         this.chapterId = chapterId;
     }
 
-    public Long getGameId() {
+    public Integer getGameId() {
         return gameId;
     }
 
-    public void setGameId(Long gameId) {
+    public void setGameId(Integer gameId) {
         this.gameId = gameId;
     }
 

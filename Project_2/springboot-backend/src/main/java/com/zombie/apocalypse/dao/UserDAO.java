@@ -1,4 +1,6 @@
-package com.zombie.apocalypse.data;
+package com.zombie.apocalypse.dao;
+import org.apache.catalina.User;
+import java.util.*;
 
 public interface UserDAO {
     /*

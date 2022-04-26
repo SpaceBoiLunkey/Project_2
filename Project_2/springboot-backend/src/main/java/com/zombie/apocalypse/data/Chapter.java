@@ -1,24 +1,24 @@
 package com.zombie.apocalypse.data;
 
 public class Chapter {
-    private Long chapterId;
+    private Integer chapterId;
     private String chapterName;
     private String chapterDescription;
 
     public Chapter() {
     }
 
-    public Chapter(Long chapterId, String chapterName, String chapterDescription) {
+    public Chapter(Integer chapterId, String chapterName, String chapterDescription) {
         this.chapterId = chapterId;
         this.chapterName = chapterName;
         this.chapterDescription = chapterDescription;
     }
 
-    public Long getChapterId() {
+    public Integer getChapterId() {
         return chapterId;
     }
 
-    public void setChapterId(Long chapterId) {
+    public void setChapterId(Integer chapterId) {
         this.chapterId = chapterId;
     }
 
