@@ -9,6 +9,9 @@ git merge main- merges main changes to your branch
 git push- pushes branch changes
 
 
+    "start": "react-scripts --openssl-legacy-provider start",
+
+
 
 PGADMIN
 
