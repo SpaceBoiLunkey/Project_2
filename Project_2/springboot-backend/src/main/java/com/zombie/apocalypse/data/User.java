@@ -4,12 +4,12 @@ public class User {
     private Integer userId;
     private String userName;
     private String userPassword;
-    private ChapterId chapterId;
+    private Chapter chapterId;
 
     public User() {
     }
 
-    public User(Integer userId, String userName, String userPassword, ChapterId chapterId) {
+    public User(Integer userId, String userName, String userPassword, Chapter chapterId) {
         this.userId = userId;
         this.userName = userName;
         this.userPassword = userPassword;
@@ -40,11 +40,11 @@ public class User {
         this.userPassword = userPassword;
     }
 
-    public ChapterId getChapterId() {
+    public Chapter getChapterId() {
         return chapterId;
     }
 
-    public void setChapterId(ChapterId chapterId) {
+    public void setChapterId(Chapter chapterId) {
         this.chapterId = chapterId;
     }
 
