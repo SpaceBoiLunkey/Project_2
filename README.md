@@ -1,5 +1,5 @@
 ## Zombie Apocalypse
-   - [Logo](https://github.com/gtwnsnd20/Project_2/)
+   - [Logo]()
 
 
 ## Description
@@ -74,8 +74,8 @@ SOFTWARE.
 
 
 ## SQL-Inserts
-   - [DB-Schema]()
-   - [SQL]()
+   - [DB-Schema](Documents/erd.png)
+   - [SQL](Documents/sql.png)
 
 
 ## Story
