@@ -23,10 +23,6 @@ import ChapterThirteen from './story/ChapterThirteen';
 
 
 function App() {
-<<<<<<< HEAD
-=======
- 
->>>>>>> main
   return (<Router>
     <br></br>
     <div className="App ">
