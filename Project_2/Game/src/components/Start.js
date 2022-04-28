@@ -2,6 +2,7 @@ import React from 'react';
 import background from '../img/zombie.png';
 import { Link } from 'react-router-dom';
 import '../Page.css';
+
 function Start() {
   return (
     <div className="col text-center pt-5">
