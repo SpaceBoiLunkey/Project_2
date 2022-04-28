@@ -2,18 +2,18 @@ package com.zombie.apocalypse.data;
 
 public class User {
     private Integer userId;
-    private Game gameId;
     private String userName;
     private String userPassword;
+    private ChapterId chapterId;
 
     public User() {
     }
 
-    public User(Integer userId, Game gameId, String userName, String userPassword) {
+    public User(Integer userId, String userName, String userPassword, ChapterId chapterId) {
         this.userId = userId;
-        this.gameId = gameId;
         this.userName = userName;
         this.userPassword = userPassword;
+        this.chapterId = chapterId;
     }
 
     public Integer getUserId() {
@@ -22,14 +22,6 @@ public class User {
 
     public void setUserId(Integer userId) {
         this.userId = userId;
-    }
-
-    public Game getGameId() {
-        return gameId;
-    }
-
-    public void setGameId(Game gameId) {
-        this.gameId = gameId;
     }
 
     public String getUserName() {
@@ -48,13 +40,21 @@ public class User {
         this.userPassword = userPassword;
     }
 
+    public ChapterId getChapterId() {
+        return chapterId;
+    }
+
+    public void setChapterId(ChapterId chapterId) {
+        this.chapterId = chapterId;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "userId=" + userId +
-                ", gameId=" + gameId +
                 ", userName='" + userName + '\'' +
                 ", userPassword='" + userPassword + '\'' +
+                ", chapterId=" + chapterId +
                 '}';
     }
 }

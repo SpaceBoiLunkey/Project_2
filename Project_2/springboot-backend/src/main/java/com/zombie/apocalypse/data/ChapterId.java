@@ -1,14 +1,14 @@
 package com.zombie.apocalypse.data;
 
-public class Chapter {
+public class ChapterId {
     private Integer chapterId;
     private String chapterName;
     private String chapterDescription;
 
-    public Chapter() {
+    public ChapterId() {
     }
 
-    public Chapter(Integer chapterId, String chapterName, String chapterDescription) {
+    public ChapterId(Integer chapterId, String chapterName, String chapterDescription) {
         this.chapterId = chapterId;
         this.chapterName = chapterName;
         this.chapterDescription = chapterDescription;
@@ -40,7 +40,7 @@ public class Chapter {
 
     @Override
     public String toString() {
-        return "Chapter{" +
+        return "ChapterId{" +
                 "chapterId=" + chapterId +
                 ", chapterName='" + chapterName + '\'' +
                 ", chapterDescription='" + chapterDescription + '\'' +
