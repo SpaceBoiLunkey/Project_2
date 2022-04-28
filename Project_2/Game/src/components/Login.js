@@ -11,15 +11,15 @@ export default function Login() {
                <br></br>
                  <div className="pt-5">
                    <div class="text-center">
-                <h1 className="font-link">Zombie Apocolypse</h1>
+                <h1 className="font-link ">Zombie Apocolypse</h1>
                 <br></br>
                 
                 <h3 > Account login</h3>
                 
                 <br></br>
                 </div>
-                <div className="col text-center" >
-                <span class="bg-dark d-inline-block p-5 mr-3">
+                <div className="col text-center "  >
+                <span class="bg-dark d-inline-block p-5 mr-3 " >
                 <div className="">
                     <label><h5>Email</h5></label>
                     <input type="email" className="form-control" placeholder="Enter Email" />
