@@ -20,6 +20,12 @@ import ChapterTen from './story/ChapterTen';
 import ChapterEleven from './story/ChapterEleven';
 import ChapterTwelve from './story/ChapterTwelve';
 import ChapterThirteen from './story/ChapterThirteen';
+import ChapterFourteen from './story/ChapterFourteen';
+import ChapterFifteen from './story/ChapterFifteen';
+import ChapterSixteen from './story/ChapterSixteen';
+import ChapterSeventeen from './story/ChapterSeventeen';
+import ChapterEighteen from './story/ChapterEighteen';
+import ChapterNineteen from './story/ChapterNineteen';
 
 
 function App() {
@@ -79,6 +85,12 @@ function App() {
             <Route path="/ChapterEleven" component={ChapterEleven} />
             <Route path="/ChapterTwelve" component={ChapterTwelve} />
             <Route path="/ChapterThirteen" component={ChapterThirteen} />
+            <Route path="/ChapterFourteen" component={ChapterFourteen} />
+            <Route path="/ChapterFifteen" component={ChapterFifteen} />
+            <Route path="/ChapterSixteen" component={ChapterSixteen} />
+            <Route path="/ChapterSeventeen" component={ChapterSeventeen} />
+            <Route path="/ChapterEighteen" component={ChapterSeventeen} />
+            <Route path="/ChapterNineteen" component={ChapterNineteen} />
        </Switch>
       <Footer/>
     </div>
