@@ -16,9 +16,19 @@ import ChapterSix from './story/ChapterSix';
 import ChapterSeven from './story/ChapterSeven';
 import ChapterEight from './story/ChapterEight';
 import ChapterNine from './story/ChapterNine';
+import ChapterTen from './story/ChapterTen';
+import ChapterEleven from './story/ChapterEleven';
+import ChapterTwelve from './story/ChapterTwelve';
+import ChapterThirteen from './story/ChapterThirteen';
+import ChapterFourteen from './story/ChapterFourteen';
+import ChapterFifteen from './story/ChapterFifteen';
+import ChapterSixteen from './story/ChapterSixteen';
+import ChapterSeventeen from './story/ChapterSeventeen';
+import ChapterEighteen from './story/ChapterEighteen';
+import ChapterNineteen from './story/ChapterNineteen';
+
 
 function App() {
- 
   return (<Router>
     <br></br>
     <div className="App ">
@@ -56,8 +66,6 @@ function App() {
         </div>
         </div>
       </nav>
-
-    
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path="/Home" component={Home} />
@@ -73,6 +81,16 @@ function App() {
             <Route path="/ChapterSeven" component={ChapterSeven} />
             <Route path="/ChapterEight" component={ChapterEight} />
             <Route path="/ChapterNine" component={ChapterNine} />
+            <Route path="/ChapterTen" component={ChapterTen} />
+            <Route path="/ChapterEleven" component={ChapterEleven} />
+            <Route path="/ChapterTwelve" component={ChapterTwelve} />
+            <Route path="/ChapterThirteen" component={ChapterThirteen} />
+            <Route path="/ChapterFourteen" component={ChapterFourteen} />
+            <Route path="/ChapterFifteen" component={ChapterFifteen} />
+            <Route path="/ChapterSixteen" component={ChapterSixteen} />
+            <Route path="/ChapterSeventeen" component={ChapterSeventeen} />
+            <Route path="/ChapterEighteen" component={ChapterSeventeen} />
+            <Route path="/ChapterNineteen" component={ChapterNineteen} />
        </Switch>
       <Footer/>
     </div>
