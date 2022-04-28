@@ -1,6 +1,13 @@
 package com.zombie.apocalypse.service;
+
+import org.apache.catalina.User;
 import java.util.*;
 
 public interface UserService {
-    public List<User> getByUserId(Integer id);
+    // Crud Operations
+    Collection<User> findAll();
+
+    User findById(Integer id);
+
+
 }

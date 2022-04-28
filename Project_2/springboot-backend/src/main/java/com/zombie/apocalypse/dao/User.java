@@ -1,4 +1,4 @@
-package com.zombie.apocalypse.data;
+package com.zombie.apocalypse.dao;
 
 public class User {
     private Integer userId;
