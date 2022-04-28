@@ -16,7 +16,7 @@ export default function ChapterTwelve() {
                 </div>
             <div>
         <h4><br></br>
-        Against your best judgement, you decide to open the door for the lady. At first, she seems nice, and begins telling you about how a zombie apocalypse started in space. Apparently, according to the people in the Bio department, someone had taken a chicken-like alien animal on another excursion and decided to try breeding it with the other chickens on board for food. However, after a few weeks, apparently the alien began to bite other chickens and spread a rabies-like virus between the animals. They quarantined the animals, but the virus spread to all the chickens and eventually mutated and jumped to humans. In this last mutation, the virus is unmistakeable as a zombification, highly contagious virus that turns people into ravenous, undead beings. You shiver as she recants the story. But then, just five minutes after she tells you this, she begins to snarl and groan oddly, and before you know it, she has a craving for human flesh. She bites you, and you live out the rest of your days as a space zombie. <br></br>Ending 5/10
+        It might have been selfish, but you decide that your best course of action is to save yourself before the zombie can make it to your pod. However, you didn't know that not only did your crewmate have coordinates to another ship that could have saved you, he also had emergency rations in case something happened and you were left to drift in space. Your selfishness ends up betraying you, and you are left to drift for all eternity. <br></br>Ending 4/10
         </h4>
         <div class="container">
     

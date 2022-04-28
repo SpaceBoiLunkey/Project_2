@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import background from "../img/zombie.png";
 import Fader from './Fader'
 
-export default function ChapterEleven() {
+export default function ChapterThirteen() {
         return (
             <form  className="flex justify-content max-w-xs mx-auto mt-5" >
                  <div className="">
