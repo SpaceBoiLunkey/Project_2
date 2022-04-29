@@ -1,24 +1,23 @@
-package com.zombie.apocalypse.dao;
+package com.zombie.apocalypse.model;
 
 public class Chapter {
-    private Integer chapterId;
+    private Long chapterId;
     private String chapterName;
     private String chapterDescription;
+    private User userId;
 
-    public Chapter() {
-    }
-
-    public Chapter(Integer chapterId, String chapterName, String chapterDescription) {
+    public Chapter(Long chapterId, String chapterName, String chapterDescription, User userId) {
         this.chapterId = chapterId;
         this.chapterName = chapterName;
         this.chapterDescription = chapterDescription;
+        this.userId = userId;
     }
 
-    public Integer getChapterId() {
+    public Long getChapterId() {
         return chapterId;
     }
 
-    public void setChapterId(Integer chapterId) {
+    public void setChapterId(Long chapterId) {
         this.chapterId = chapterId;
     }
 
@@ -38,12 +37,21 @@ public class Chapter {
         this.chapterDescription = chapterDescription;
     }
 
+    public User getUserId() {
+        return userId;
+    }
+
+    public void setUserId(User userId) {
+        this.userId = userId;
+    }
+
     @Override
     public String toString() {
-        return "ChapterId{" +
+        return "Chapter{" +
                 "chapterId=" + chapterId +
                 ", chapterName='" + chapterName + '\'' +
                 ", chapterDescription='" + chapterDescription + '\'' +
+                ", userId=" + userId +
                 '}';
     }
 }

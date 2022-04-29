@@ -1,26 +1,30 @@
-package com.zombie.apocalypse.dao;
+package com.zombie.apocalypse.model;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name = "USER")
 public class User {
-    private Integer userId;
+    @Id
+    @GeneratedValue
+    private int userId;
     private String userName;
     private String userPassword;
-    private Chapter chapterId;
 
-    public User() {
-    }
-
-    public User(Integer userId, String userName, String userPassword, Chapter chapterId) {
-        this.userId = userId;
-        this.userName = userName;
-        this.userPassword = userPassword;
-        this.chapterId = chapterId;
-    }
-
-    public Integer getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
@@ -40,21 +44,12 @@ public class User {
         this.userPassword = userPassword;
     }
 
-    public Chapter getChapterId() {
-        return chapterId;
-    }
-
-    public void setChapterId(Chapter chapterId) {
-        this.chapterId = chapterId;
-    }
-
     @Override
     public String toString() {
         return "User{" +
                 "userId=" + userId +
                 ", userName='" + userName + '\'' +
                 ", userPassword='" + userPassword + '\'' +
-                ", chapterId=" + chapterId +
                 '}';
     }
 }
