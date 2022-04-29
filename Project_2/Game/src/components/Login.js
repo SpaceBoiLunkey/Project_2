@@ -8,10 +8,10 @@ export default function Login() {
         return (
 
             <form  className="flex justify-content max-w-xs mx-auto mt-5 "  >
-               <br></br>
-                 <div className="pt-5">
+            
+                 <div className="pt-5 mt-5">
                    <div class="text-center">
-                <h1 className="font-link ">Zombie Apocolypse</h1>
+                <h1 className="font-link ">Zombie Apocalypse</h1>
                 <br></br>
 
                 <h3 > Account login</h3>
@@ -35,6 +35,7 @@ export default function Login() {
 <Link to="/Start" type="submit" className="btn btn-success btn-lg btn-block"><h5>Login</h5></Link>
 </span>
                 </div>
+                <br></br><br></br><br></br>
                 </div>
             </form>
         );

@@ -1,6 +1,5 @@
 import React from "react";
 import {
-Box,
 Container,
 Row,
 Column,
@@ -13,8 +12,7 @@ return (
 
 	<Container className="mt-5 ">
 		<Row>
-		<Column >
-			<Heading>About Us</Heading>
+		<Column>	<Heading>About Us</Heading>
 			<FooterLink href="#">Authors</FooterLink>
 			<FooterLink href="#">Press</FooterLink>
 			<FooterLink href="#">Testimonials</FooterLink>
@@ -62,7 +60,7 @@ return (
       
         <Container>
               <br></br><div><h5>
-              <br></br>@ 2022 Zombie Apocolypse</h5></div></Container>
+              <br></br>@ 2022 Zombie Apocalypse</h5></div></Container>
 	</Container>
    
     
