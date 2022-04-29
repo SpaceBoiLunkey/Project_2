@@ -1,21 +1,18 @@
 package com.zombie.apocalypse.model;
 
-import lombok.Data;
-
-import javax.persistence.*;
-import java.io.Serializable;
-import java.util.Set;
-
-@Entity
-@Table(name = "Chapters")
-public class Chapter implements Serializable {
-    @Id
+public class Chapter {
     private Long chapterId;
     private String chapterName;
     private String chapterDescription;
-    private Set<User> userId;
+    private User userId;
 
-    @Column(name = "Id", nullable = false)
+    public Chapter(Long chapterId, String chapterName, String chapterDescription, User userId) {
+        this.chapterId = chapterId;
+        this.chapterName = chapterName;
+        this.chapterDescription = chapterDescription;
+        this.userId = userId;
+    }
+
     public Long getChapterId() {
         return chapterId;
     }
@@ -24,7 +21,6 @@ public class Chapter implements Serializable {
         this.chapterId = chapterId;
     }
 
-    @Column(name = "Name", nullable = false)
     public String getChapterName() {
         return chapterName;
     }
@@ -33,7 +29,6 @@ public class Chapter implements Serializable {
         this.chapterName = chapterName;
     }
 
-    @Column(name = "Descrption", nullable = false)
     public String getChapterDescription() {
         return chapterDescription;
     }
@@ -42,13 +37,21 @@ public class Chapter implements Serializable {
         this.chapterDescription = chapterDescription;
     }
 
-    @OneToMany(fetch = FetchType.EAGER, targetEntity = User.class)
-    @JoinColumn(name = "Id", nullable = false)
     public User getUserId() {
         return userId;
     }
 
     public void setUserId(User userId) {
         this.userId = userId;
+    }
+
+    @Override
+    public String toString() {
+        return "Chapter{" +
+                "chapterId=" + chapterId +
+                ", chapterName='" + chapterName + '\'' +
+                ", chapterDescription='" + chapterDescription + '\'' +
+                ", userId=" + userId +
+                '}';
     }
 }

@@ -1,29 +1,33 @@
 package com.zombie.apocalypse.model;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import lombok.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-import javax.persistence.*;
-import java.io.Serializable;
-
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
-@Table(name = "Users")
-public class User implements Serializable {
+@Table(name = "USER")
+public class User {
     @Id
-    private Long userId;
+    @GeneratedValue
+    private int userId;
     private String userName;
     private String userPassword;
-    private Chapter chapterId;
 
-    @Column(name = "Id", nullable = false)
-    public Long getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(Long userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
-    @Column(name = "Username", nullable = false)
     public String getUserName() {
         return userName;
     }
@@ -32,7 +36,6 @@ public class User implements Serializable {
         this.userName = userName;
     }
 
-    @Column(name = "Password", nullable = false)
     public String getUserPassword() {
         return userPassword;
     }
@@ -41,12 +44,12 @@ public class User implements Serializable {
         this.userPassword = userPassword;
     }
 
-    @OneToMany(fetch = FetchType.EAGER, targetEntity = Chapter.class)
-    public Chapter getChapterId() {
-        return chapterId;
-    }
-
-    public void setChapterId(Chapter chapterId) {
-        this.chapterId = chapterId;
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId=" + userId +
+                ", userName='" + userName + '\'' +
+                ", userPassword='" + userPassword + '\'' +
+                '}';
     }
 }
