@@ -24,7 +24,7 @@ function Start() {
         >
           Continue Game
         </Link>
-        <div className="bg" style={{ backgroundImage: `url(${background})` }}>
+        <div className="bg rounded" style={{ backgroundImage: `url(${background})` }}>
           <div className="flex justify-content max-w-xs mx-auto mt-5"></div>
         </div>
       </div>

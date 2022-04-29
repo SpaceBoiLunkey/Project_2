@@ -2,10 +2,27 @@ import styled from 'styled-components';
 
 export const Box = styled.div`
 padding: 80px 60px;
-background: black;
-position: absolute;
+background: lightyellow;
+position: center;
+border-radius: 10px;
 bottom: 0;
 width: 100%;
+margin-bottom: 50px;
+
+@media (max-width: 2Z000px) {
+	padding: 70px 30px;
+}
+`;
+
+
+export const BoxTwo = styled.div`
+padding: 80px 60px;
+background: lightsteelblue;
+position: center;
+border-radius: 10px;
+bottom: 0;
+width: 100%;
+margin-bottom: 50px;
 
 
 @media (max-width: 2Z000px) {
@@ -13,11 +30,12 @@ width: 100%;
 }
 `;
 
+
 export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	max-width: 1000px;
+
+	max-width: 1200px;
 	margin: 0 auto;
 	/* background: red; */
 `
@@ -27,12 +45,13 @@ display: flex;
 flex-direction: column;
 text-align: left;
 margin-left: 60px;
+
 `;
 
 export const ColumnTwo = styled.div`
 display: grid;
 grid-template-columns: repeat(auto-fill,
-						minmax(1085px, 1fr));
+						minmax(885px, 1fr));
 grid-gap: 20px;
 
 @media (max-width: 1000px) {
@@ -42,10 +61,8 @@ grid-gap: 20px;
 `;
 
 
-
-
-export const Row = styled.div`
-display: grid;
+export const RowTwo = styled.div`
+display: -ms-grid;
 grid-template-columns: repeat(auto-fill,
 						minmax(185px, 1fr));
 grid-gap: 20px;
@@ -56,9 +73,21 @@ grid-gap: 20px;
 }
 `;
 
+export const Row = styled.div`
+display: grid;
+grid-template-columns: repeat(auto-fill,
+						minmax(185px, 1fr));
+grid-gap: 70px;
+
+@media (max-width: 1000px) {
+	grid-template-columns: repeat(auto-fill,
+						minmax(200px, 1fr));
+}
+`;
+
 export const FooterLink = styled.a`
 color: #fff;
-margin-bottom: 20px;
+margin-bottom: 10px;
 font-size: 18px;
 text-decoration: none;
 

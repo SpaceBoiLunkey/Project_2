@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Footer from './components/Footer';
 import Home from "./components/Home";
 import Login from "./components/Login";
+import Support from './components/Support';
+import Community from './components/Community';
 import Store from './components/Store';
 import Start from './components/Start';
 import ChapterOne from './story/ChapterOne';
@@ -46,10 +48,10 @@ function App() {
         <li className="nav-item">
                 <Link className="nav-link" to={"/Store"}><h4>Store</h4></Link>
               </li>   <li className="nav-item">
-                <Link className="nav-link" to={"/Home"}><h4>Community</h4></Link>
+                <Link className="nav-link" to={"/Community"}><h4>Community</h4></Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/Home"}><h4>Support</h4></Link>
+                <Link className="nav-link" to={"/Support"}><h4>Support</h4></Link>
               </li>
               </ul>
               </div ><div class="collapse navbar-collapse text-start" id="navbarCollapse">
@@ -71,6 +73,8 @@ function App() {
             <Route path="/Home" component={Home} />
             <Route path="/Login" component={Login} />
             <Route path="/Start" component={Start} />
+            <Route path="/Support" component={Support} />
+            <Route path="/Community" component={Community} />
             <Route path="/Store" component={Store} />
             <Route path="/ChapterOne" component={ChapterOne} />
             <Route path="/ChapterTwo" component={ChapterTwo} />
