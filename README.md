@@ -1,5 +1,5 @@
 ## Zombie Apocalypse
-<img src="Documents/img/ZA.png" width="100">
+<img src="Documents/img/ZA.png">
 
 
 ## Description
@@ -100,12 +100,13 @@ SOFTWARE.
 
 
 ## Story
-## Chapter 1: Initial Story:
+## Chapter 1 ##: Initial Story:
 The year is 2092. You are employed by Alterra, an inter-galatic space agency based on the planet Earth that is responsible for colonizing space. Your specific position isn't an important one, you're pretty low on the totem pole. You've been a part of the crew of this spaceship for a while. Your specific crew is responsible for exploring new areas of space not yet colonized or discovered by Alterra. This means that you regularly encounter alien species and situations the average Earth-dweller isn't used to.
 Getting a good night's sleep on a spaceship is difficult, considering the 24 hour Earth day doesn't exist naturally outside of the planet, so you take any and every opportunity to get as much sleep as you can. However, this particular night, something arouses you out of your slumber before you are able to get your full 8 hours. Your emergency pager is going off. Since you are technically not on the clock right now, you are allowed to ignore it. Do you...
 (2) Answer the pager? (3) Go back to sleep?
 
-## Chapter 2: Answer the pager:
+## Chapter 2
+Answer the pager:
 Getting out of your bed, you decide to answer your pager out of pure curiosity. You hit the button to connect and hear the pre-recorded distress signal.
 "THIS IS AN EMERGENCY. PLEASE LISTEN CAREFULLY. A SECURITY CONTAINMENT BREACH HAS OCCURED WITHIN THE MORGUE. AN INTER-GALACTIC BIOLOGICAL EVENT IS IMINENT. PLEASE REPORT TO YOUR TEAM LEADER IMMEDIATELY."
 You're incredibly happy that you decided to get out of bed when you did. An inter-galactic biological event? That doesn't sound very pleasant. You put on your shoes, take your crew ID with you, and grab your bag with all your valueables. You head out the door to meet at the emergency rendeveux point.
@@ -113,7 +114,7 @@ Once you arrive, you don't see the rest of your team there waiting like you usua
 You start hearing people begin to peek out of their doors, confused and curious about the recent announcement. At your emergency station, there is a cabinet with a gun for defensive purposes. Whatever is happening, you realize it's pretty serious, and just quarantining in your room might not be enough. You could grab the gun and explore the area of the ship to see what's going on, or you could play it safe and go back to your room to quarantine. Do you...
 (4) Go quarantine? (5) Grab a gun?
 
-## Chapter 3: Go back to sleep:
+# Chapter 3: Go back to sleep:
 You're not even on the clock right now, so you're definitely within your rights to go back to sleep. Drifting off into sleepy bliss, you are suddenly awoken a few minutes later by a knock at your door. You reluctantly get out of bed to answer it, considering grunt crew members like you weren't bothered for anything if it wasn't serious.
 You look through the peep hole on your door. You're met with an eye staring right back at you. "Hello?" the person says. "Please open the door. Everyone is in danger!"
 Something isn't adding up. Unless this threat is actually credible, your room will be more than safe from any random attack or threat. You could go back to sleep, and accept your fate, or open the door to see what's up.
