@@ -74,7 +74,7 @@ SOFTWARE.
 
 
 ## SQL-Inserts
-   - [DB-Schema](Documents/erd.png)
+   - [DB-Schema](Documents/img/erd.png)
    - [SQL](Documents/sql.png)
 
 
