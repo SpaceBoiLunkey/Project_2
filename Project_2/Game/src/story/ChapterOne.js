@@ -19,7 +19,7 @@ export default function ChapterOne() {
                 
            
 <br></br>
-<div className="pg"style={{ backgroundImage: `url(${background})` }}>
+<div className="pg rounded"style={{ backgroundImage: `url(${background})` }}>
     </div>
     <div>
         <h4 ><br></br>

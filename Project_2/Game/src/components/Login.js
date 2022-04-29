@@ -19,7 +19,7 @@ export default function Login() {
                 <br></br>
                 </div>
                 <div className="col text-center "  >
-                <span class="bg-dark d-inline-block p-5 mr-3 " >
+                <span class="bg-dark d-inline-block p-5 mr-3 rounded" >
                 <div className="">
                     <label><h5>Email</h5></label>
                     <input type="email" className="form-control" placeholder="Enter Email" />
