@@ -1,17 +1,25 @@
 package com.zombie.apocalypse.model;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "CHAPTER")
 public class Chapter {
+    @Id
+    @GeneratedValue
     private Long chapterId;
     private String chapterName;
     private String chapterDescription;
     private User userId;
-
-    public Chapter(Long chapterId, String chapterName, String chapterDescription, User userId) {
-        this.chapterId = chapterId;
-        this.chapterName = chapterName;
-        this.chapterDescription = chapterDescription;
-        this.userId = userId;
-    }
 
     public Long getChapterId() {
         return chapterId;
