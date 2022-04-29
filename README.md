@@ -1,5 +1,7 @@
 ## Zombie Apocalypse
-<img src="Documents/img/ZA.png" center>
+<img src="Documents/img/ZA.png">
+
+   - [Logo](Documents/img/ZA.png)
 
 
 ## Description
@@ -15,7 +17,7 @@ prevent abuse and unwanted content.
    - [Usage](#usage)
    - [Credits](#credits)
    - [License](#license)
-   - [SQL-Inserts](#sql-inserts)
+   - [Database](#Database)
    - [Story](#Story)
 
 
@@ -74,7 +76,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
-## SQL-Inserts
+## Database
+<img src="Documents/img/erd.png">
+
    - [DB-Schema](Documents/img/erd.png)
    - [SQL](Documents/sql.png)
 
