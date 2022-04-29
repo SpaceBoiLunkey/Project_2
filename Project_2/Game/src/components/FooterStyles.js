@@ -8,7 +8,7 @@ bottom: 0;
 width: 100%;
 
 
-@media (max-width: 1000px) {
+@media (max-width: 2Z000px) {
 	padding: 70px 30px;
 }
 `;
@@ -28,6 +28,21 @@ flex-direction: column;
 text-align: left;
 margin-left: 60px;
 `;
+
+export const ColumnTwo = styled.div`
+display: grid;
+grid-template-columns: repeat(auto-fill,
+						minmax(1085px, 1fr));
+grid-gap: 20px;
+
+@media (max-width: 1000px) {
+	grid-template-columns: repeat(auto-fill,
+						minmax(200px, 1fr));
+}
+`;
+
+
+
 
 export const Row = styled.div`
 display: grid;

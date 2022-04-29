@@ -9,7 +9,7 @@ export default function Community() {
     <form  className="flex justify-content max-w-xs mx-auto mt-5 "  >
 
     <h1 className="pt-5">
-      Zombie Apocolypse
+      Zombie Apocalypse
     </h1>
     <Container>
       <Row>
