@@ -19,12 +19,12 @@ PGADMIN
 
 TABLES
 
-    CREATE TABLE public.users
+    CREATE TABLE testtable
     (
         id bigserial NOT NULL,
         username character varying,
         password character varying,
-        PRIMARY KEY ("userId")
+        PRIMARY KEY ("id")
     );
 
 
