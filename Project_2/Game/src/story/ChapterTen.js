@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import background from "../img/zombie.png";
+import background from "../img/ZombieFood.png";
 import Fader from './Fader'
 
 export default function ChapterTen() {
@@ -15,12 +15,13 @@ export default function ChapterTen() {
                     <div className="pg rounded"style={{ backgroundImage: `url(${background})` }}>
                 </div>
             <div>
-        <h4><br></br>
-        </h4>
+        
+       
         <div class="container">
+        <h4><br></br>
         You decide to go with the man to fight off the zombies. You know that you will have a bigger chance of survival if you try to quell the outbreak as soon as possible. You begin shooting and killing off dozens of zombies. But slowly, you realize that there's more zombies than you have bullets. You fight a good fight, but its to late your gun runs out of ammo and the zombies overwelm you. <br></br>Ending 3/10
-
-        <Link to="/Start" type="submit" className="btn btn-success btn-lg btn-block mt-5">Try again?</Link>
+ </h4>
+        <Link to="/Start" type="submit" className="btn btn-danger btn-lg btn-block mt-5">Try again?</Link>
                 <>
             <Fader></Fader>
                 </>

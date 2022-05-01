@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import background from "../img/zombie.png";
+import background from "../img/emptySpace.jpg";
 import Fader from './Fader'
 
 export default function ChapterTwelve() {
