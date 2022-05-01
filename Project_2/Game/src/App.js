@@ -1,7 +1,7 @@
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Footer from './components/Footer';
 import Home from "./components/Home";
 import Login from "./components/Login";
@@ -28,6 +28,8 @@ import ChapterSixteen from './story/ChapterSixteen';
 import ChapterSeventeen from './story/ChapterSeventeen';
 import ChapterEighteen from './story/ChapterEighteen';
 import ChapterNineteen from './story/ChapterNineteen';
+import UserRegistration from './components/UserRegistration';
+import FakeLogin from './components/fakkelogin';
 
 
 function App() {
@@ -62,40 +64,48 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link" to={"/Login"}><h4>Login</h4></Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/UserRegistration"}><h4>User Registration</h4></Link>
+              </li>
+
            
              
           </ul>
         </div>
         </div>
       </nav>
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path="/Home" component={Home} />
-            <Route path="/Login" component={Login} />
-            <Route path="/Start" component={Start} />
-            <Route path="/Support" component={Support} />
-            <Route path="/Community" component={Community} />
-            <Route path="/Store" component={Store} />
-            <Route path="/ChapterOne" component={ChapterOne} />
-            <Route path="/ChapterTwo" component={ChapterTwo} />
-            <Route path="/ChapterThree" component={ChapterThree} />
-            <Route path="/ChapterFour" component={ChapterFour} />
-            <Route path="/ChapterFive" component={ChapterFive} />
-            <Route path="/ChapterSix" component={ChapterSix} />
-            <Route path="/ChapterSeven" component={ChapterSeven} />
-            <Route path="/ChapterEight" component={ChapterEight} />
-            <Route path="/ChapterNine" component={ChapterNine} />
-            <Route path="/ChapterTen" component={ChapterTen} />
-            <Route path="/ChapterEleven" component={ChapterEleven} />
-            <Route path="/ChapterTwelve" component={ChapterTwelve} />
-            <Route path="/ChapterThirteen" component={ChapterThirteen} />
-            <Route path="/ChapterFourteen" component={ChapterFourteen} />
-            <Route path="/ChapterFifteen" component={ChapterFifteen} />
-            <Route path="/ChapterSixteen" component={ChapterSixteen} />
-            <Route path="/ChapterSeventeen" component={ChapterSeventeen} />
-            <Route path="/ChapterEighteen" component={ChapterSeventeen} />
-            <Route path="/ChapterNineteen" component={ChapterNineteen} />
-       </Switch>
+          <Routes>
+            <Route exact path='/' element={<Home/>} />
+            <Route path="/Home" element={<Home/>} />
+            <Route path="/Login" element={<Login/>} />
+            <Route path="/Start" element={<Start/>} />
+            <Route path="/Support" element={<Support/>} />
+            <Route path="/Community" element={<Community/>} />
+            <Route path="/Store" element={<Store/>} />
+            <Route path="/ChapterOne" element={<ChapterOne/>} />
+            <Route path="/ChapterTwo" element={<ChapterTwo/>} />
+            <Route path="/ChapterThree" element={<ChapterThree/>} />
+            <Route path="/ChapterFour" element={<ChapterFour/>} />
+            <Route path="/ChapterFive" element={<ChapterFive/>} />
+            <Route path="/ChapterSix" element={<ChapterSix/>} />
+            <Route path="/ChapterSeven" element={<ChapterSeven/>} />
+            <Route path="/ChapterEight" element={<ChapterEight/>} />
+            <Route path="/ChapterNine" element={<ChapterNine/>} />
+            <Route path="/ChapterTen" element={<ChapterTen/>} />
+            <Route path="/ChapterEleven" element={<ChapterEleven/>} />
+            <Route path="/ChapterTwelve" element={<ChapterTwelve/>} />
+            <Route path="/ChapterThirteen" element={<ChapterThirteen/>} />
+            <Route path="/ChapterFourteen" element={<ChapterFourteen/>} />
+            <Route path="/ChapterFifteen" element={<ChapterFifteen/>} />
+            <Route path="/ChapterSixteen" element={<ChapterSixteen/>} />
+            <Route path="/ChapterSeventeen" element={<ChapterSeventeen/>} />
+            <Route path="/ChapterEighteen" element={<ChapterEighteen/>} />
+            <Route path="/ChapterNineteen" element={<ChapterNineteen/>} />
+            <Route path="/UserRegistration" element={<UserRegistration/>} />
+            <Route path="/fakeLogin" element={<FakeLogin/>} />
+
+
+       </Routes>
       <Footer/>
     </div>
    </Router>
