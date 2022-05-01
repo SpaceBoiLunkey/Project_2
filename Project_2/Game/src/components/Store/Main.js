@@ -3,7 +3,7 @@ let carts = document.querySelectorAll('.add-cart');
 
 let products = [ 
     {
-        name: "Captain America",
+        name: "Zombie Shirt",
         tag: "captainamerica",
         price: 6,
         inCart: 0

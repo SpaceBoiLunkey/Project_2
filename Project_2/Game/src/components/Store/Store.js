@@ -18,12 +18,12 @@ export default function Store() {
 			<div class="col shop-item">
 		  <div class="card mb-4 rounded-3 shadow-sm">
 			<div class="card-header py-3">
-			  <h4 class="my-0 fw-normal shop-item-title" >Captain America</h4>
+			  <h4 class="my-0 fw-normal shop-item-title" >Zombie Shirt</h4>
 			</div>
 			<div class="card-body shop-item-details image">
 			  <h1 class="card-title pricing-card-title shop-item-price">$6.00<small class="text-muted fw-light"></small></h1>
 			  <div class="list-unstyled mt-3 mb-4">
-				<img class="img-fluid shop-item-image" src="../images/captainamerica.jpg" alt=""></img>
+				<img class="img-fluid shop-item-image" src="../images/zombieshirt.jpg" alt=""></img>
 			  </div>
         <button to="" type="button" className="w-100 btn btn-lg btn-primary add-cart cart1"><h5>Add</h5></button>
 			  <input type="hidden" value="6" />
