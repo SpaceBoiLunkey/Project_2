@@ -31,6 +31,8 @@ import ChapterSeventeen from './story/ChapterSeventeen';
 import ChapterEighteen from './story/ChapterEighteen';
 import ChapterNineteen from './story/ChapterNineteen';
 import UserRegistration from './components/UserRegistration';
+import CommentSection from './components/CommentSection/CommentSection';
+import AdminComments from './components/CommentSection/AdminComments';
 
 
 function App() {
@@ -105,6 +107,8 @@ function App() {
             <Route path="/ChapterEighteen" element={<ChapterEighteen/>} />
             <Route path="/ChapterNineteen" element={<ChapterNineteen/>} />
             <Route path="/UserRegistration" element={<UserRegistration/>} />
+            <Route path="/CommentSection" element={<CommentSection/>} />
+            <Route path="/AdminComments" element={<AdminComments/>} />
 
 
        </Routes>

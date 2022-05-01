@@ -125,9 +125,9 @@ app.post('/commentssection',(req,res)=>{
 //http://localhost:3001/commentssection
 app.put('/commentssection/:Id',(req,res)=>{
     const id =req.params.Id;
-    let {adminreply} = req.body;
+    let {adminreply,admin,time} = req.body;
    //INSERT or UPDATE SQL statements we can use to create or update record in table respectively
-    poolconn.query('UPDATE commentssection SET adminreply=$2 WHERE id=$1',[id, adminreply],(error,results)=>{
+    poolconn.query('UPDATE commentssection SET adminreply=$2, admin=$3, time=$4 WHERE id=$1',[id, adminreply,admin,time],(error,results)=>{
         if(error){
             throw error;
         }
