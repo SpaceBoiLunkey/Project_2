@@ -1,0 +1,76 @@
+PROJECT 2
+
+How To Merge Master into Branch
+
+git checkout main- switches to the main branch
+git pull- pulls any main branch changes
+git checkout branchname- switches to the branch
+git merge main- merges main changes to your branch
+git push- pushes branch changes
+
+
+
+POSTGRES BACKEND
+
+1. do npm install (on the postgressbackend folder/ terminal)
+2. change the password in dbconnections to your postgress password
+
+3. open QueryTool in pgAdmin and enter these queries
+
+
+
+CREATE DATABASE projecttwo;
+
+
+CREATE TABLE users
+    (
+        id bigserial NOT NULL,
+        email character varying,
+        password character varying,
+        PRIMARY KEY ("id")
+    );
+
+
+CREATE TABLE public.userdetails
+    (
+        id bigserial NOT NULL,
+        email character varying ,
+        password character varying,
+        firstname character varying,
+        lastname character varying,
+        savepoint bigint,
+        PRIMARY KEY (id)
+        
+    );
+
+CREATE TABLE IF NOT EXISTS public.commentssection
+(
+    id bigserial NOT NULL,
+    alias character varying COLLATE pg_catalog."default",
+    comment character varying COLLATE pg_catalog."default",
+    adminreply character varying COLLATE pg_catalog."default",
+    admin character varying COLLATE pg_catalog."default",
+    "time" character varying COLLATE pg_catalog."default",
+    CONSTRAINT comments_pkey PRIMARY KEY (id)
+);
+
+
+4. open terminal index.js 
+    node index.js -> to start
+
+5. open Game folder
+    npm start
+
+.then((res) => {
+            console.log(res);
+            navigate("/Start");
+          });
+
+
+just more notes:
+
+const onSubmit = (event) => {
+    event.preventDefault();
+    handleSubmit(text);
+    setText("");
+  };
