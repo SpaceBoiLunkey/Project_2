@@ -7,8 +7,10 @@ import Home from "./components/Home";
 import Login from "./components/Login";
 import Support from './components/Support';
 import Community from './components/Community';
-import Store from './components/Store';
+import Store from './components/Store/Store';
+import Cart from './components/Store/Cart';
 import Start from './components/Start';
+import Register from './components/Register';
 import ChapterOne from './story/ChapterOne';
 import ChapterTwo from './story/ChapterTwo';
 import ChapterThree from './story/ChapterThree';
@@ -62,8 +64,6 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link" to={"/Login"}><h4>Login</h4></Link>
               </li>
-           
-             
           </ul>
         </div>
         </div>
@@ -76,6 +76,8 @@ function App() {
             <Route path="/Support" component={Support} />
             <Route path="/Community" component={Community} />
             <Route path="/Store" component={Store} />
+            <Route path="/Cart" component={Cart} />
+            <Route path="/Register" component={Register} />
             <Route path="/ChapterOne" component={ChapterOne} />
             <Route path="/ChapterTwo" component={ChapterTwo} />
             <Route path="/ChapterThree" component={ChapterThree} />
@@ -93,7 +95,7 @@ function App() {
             <Route path="/ChapterFifteen" component={ChapterFifteen} />
             <Route path="/ChapterSixteen" component={ChapterSixteen} />
             <Route path="/ChapterSeventeen" component={ChapterSeventeen} />
-            <Route path="/ChapterEighteen" component={ChapterSeventeen} />
+            <Route path="/ChapterEighteen" component={ChapterEighteen} />
             <Route path="/ChapterNineteen" component={ChapterNineteen} />
        </Switch>
       <Footer/>

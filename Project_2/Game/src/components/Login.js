@@ -33,6 +33,9 @@ export default function Login() {
 <br></br>
 
 <Link to="/Start" type="submit" className="btn btn-success btn-lg btn-block"><h5>Login</h5></Link>
+<div className='mt-3'>
+<Link to="/Register" type="submit" className=""><h5>Register</h5></Link>
+</div>
 </span>
                 </div>
                 <br></br><br></br><br></br>

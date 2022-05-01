@@ -4,7 +4,6 @@ import {
     Row,
     Column,
     } from "./FooterStyles";
-    import { Link } from "react-router-dom";
 export default function Support() {
   return (
     <form  className="flex justify-content max-w-xs mx-auto mt-5 "  >
