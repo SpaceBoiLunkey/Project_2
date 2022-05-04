@@ -1,9 +1,6 @@
 import React, { useState} from "react";
-import { Link} from "react-router-dom";
-
-
 import axios from 'axios';
-
+import { Link } from "react-router-dom";
 function UserRegistration() {
 
     // React States
@@ -59,51 +56,58 @@ function UserRegistration() {
     const renderForm = (
 
      
-        <div className="containermed" id="container1">
+      <div className="col text-center "  >
+        <span class="bg-dark d-inline-block p-5 mr-3 rounded" >
           <form onSubmit={handleSubmit}>
              <div className="input-container">
-              <label>Email </label>
-              <input type="email" name="email" required />
+              <label><h5>Email</h5></label>
+              <input type="email" name="email" required className="form-control" placeholder="Enter Email" />
               {renderErrorMessage("email")}
             </div>
+            
             <div className="input-container">
-              <label>First Name </label>
-              <input type="text" name="firstname" required />
+              <label><h5>First Name</h5></label>
+              <input type="text" name="firstname" required className="form-control" placeholder="Enter Fisrt Name"/>
             </div>
             <div className="input-container">
-              <label>Last Name </label>
-              <input type="text" name="lastname" required />
+              <label><h5>Last Name</h5></label>
+              <input type="text" name="lastname" required className="form-control" placeholder="Enter Last Name"/>
             </div>
             <div className="input-container">
-              <label>Password </label>
-              <input type="password" name="password" required />
+              <label><h5>Password</h5> </label>
+              <input type="password" name="password" required className="form-control" placeholder="Enter password"/>
             </div>
             <br></br>
-            <div className="button-container">
+            <button onClick={handleSubmit} className="btn btn-success btn-lg btn-block" type="submit" >Submit</button>
+          {/*  <div className="button-container">
               <input class="button" type="submit" />
-            </div>
-            <div>
-         
-            </div>
+    </div>*/}
+                         <div className='mt-3'>
+    
+    <Link to="/Login" type="submit" className=""><h5>Login</h5></Link>
+    </div>
           </form>
+          </span>
         </div>
       );
     return(
 
-    <div className="app">
-      <div className="login-form">
-     
-        <div className="title">User Registration</div>
-        <nav className="navigate">  
-           <Link to="/Login"> Home</Link>
+      <form  className="flex justify-content max-w-xs mx-auto mt-5 "  >
+      <div className="pt-5 mt-5">
+        <div class="text-center">
+     <h1 className="font-link ">Zombie Apocalypse</h1>
+     <br></br>
 
-           
-       </nav>
+     <h3 > Account Register</h3>
         {isSubmitted ? 
                      <div>User Registered successfully </div>   
         : renderForm}
-      </div>
-    </div>
+    <br></br>
+                </div>
+                <br></br><br></br><br></br>
+                
+                </div>
+            </form>
     );
 
 }

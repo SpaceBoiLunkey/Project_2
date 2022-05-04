@@ -4,13 +4,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Footer from './components/Footer';
 import Home from "./components/Home";
-import Login from "./components/Login";
-import Support from './components/Support';
+import Login from "./components/Login/Login";
 import Community from './components/Community';
 import Store from './components/Store/Store';
 import Cart from './components/Store/Cart';
 import Start from './components/Start';
-import Register from './components/Register';
+import Register from './components/Login/Register';
 import ChapterOne from './story/ChapterOne';
 import ChapterTwo from './story/ChapterTwo';
 import ChapterThree from './story/ChapterThree';
@@ -30,7 +29,7 @@ import ChapterSixteen from './story/ChapterSixteen';
 import ChapterSeventeen from './story/ChapterSeventeen';
 import ChapterEighteen from './story/ChapterEighteen';
 import ChapterNineteen from './story/ChapterNineteen';
-import UserRegistration from './components/UserRegistration';
+import UserRegistration from './components/Login/UserRegistration';
 import CommentSection from './components/CommentSection/CommentSection';
 import AdminComments from './components/CommentSection/AdminComments';
 
@@ -53,10 +52,10 @@ function App() {
         <li className="nav-item">
                 <Link className="nav-link" to={"/Store"}><h4>Store</h4></Link>
               </li>   <li className="nav-item">
-                <Link className="nav-link" to={"/Community"}><h4>Community</h4></Link>
+                <Link className="nav-link" to={"/CommentSection"}><h4>Community</h4></Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/Support"}><h4>Support</h4></Link>
+                <Link className="nav-link" to={"/UserRegistration"}><h4>Support</h4></Link>
               </li>
               </ul>
               </div ><div class="collapse navbar-collapse text-start" id="navbarCollapse">
@@ -65,10 +64,7 @@ function App() {
                 <Link className="nav-link" to={"/Home"}><h4>Home</h4></Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/Login"}><h4>Login</h4></Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to={"/UserRegistration"}><h4>User Registration</h4></Link>
+                <Link className="nav-link" to={"/Login"}><h4>Play</h4></Link>
               </li>
 
            
@@ -82,7 +78,6 @@ function App() {
             <Route path="/Home" element={<Home/>} />
             <Route path="/Login" element={<Login/>} />
             <Route path="/Start" element={<Start/>} />
-            <Route path="/Support" element={<Support/>} />
             <Route path="/Community" element={<Community/>} />
             <Route path="/Store" element={<Store/>} />
             <Route path="/Cart" element={<Cart/>} />

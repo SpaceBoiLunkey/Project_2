@@ -21,9 +21,15 @@ export default function Store() {
 			  <h4 class="my-0 fw-normal shop-item-title" >Zombie Shirt</h4>
 			</div>
 			<div class="card-body shop-item-details image">
+      <img
+      src='./img/zombie.png'
+      className='img-thumbnail img-fluid shadow-2-strong shop-item-image'
+      alt='...'
+      style={{ maxWidth: '24rem' }}
+			/>
 			  <h1 class="card-title pricing-card-title shop-item-price">$6.00<small class="text-muted fw-light"></small></h1>
 			  <div class="list-unstyled mt-3 mb-4">
-				<img class="img-fluid shop-item-image" src="../images/zombieshirt.jpg" alt=""></img>
+     
 			  </div>
         <button to="" type="button" className="w-100 btn btn-lg btn-primary add-cart cart1"><h5>Add</h5></button>
 			  <input type="hidden" value="6" />

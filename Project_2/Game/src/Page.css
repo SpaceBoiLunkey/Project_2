@@ -39,6 +39,12 @@ h5 {
     color: rgb(135, 225, 176);
   
 }
+p {
+  font-size:150%; 
+    color: rgb(34, 5, 93);
+  
+}
+
 
 .App {
   max-width: 1460px;
