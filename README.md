@@ -1,9 +1,9 @@
 ## Zombie Apocalypse
-
+<span class="border-wrap">
 <img src="Documents/img/ZA.png">
 
    - [Logo](Documents/img/ZA.png)
-
+</span>
 
 ## Description
 ReactIt is a community where people can share their passions, learn about new 
