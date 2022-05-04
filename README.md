@@ -1,8 +1,9 @@
 ## Zombie Apocalypse
+<div className = "text-center">
 <img src="Documents/img/ZA.png">
 
    - [Logo](Documents/img/ZA.png)
-
+</div>
 
 ## Description
 ReactIt is a community where people can share their passions, learn about new 
