@@ -6,28 +6,29 @@ Column,
 FooterLink,
 Heading,
 } from "./FooterStyles";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
 return (
 
 	<Container className="mt-5 ">
 		<Row>
 		<Column>	<Heading>About Us</Heading>
-			<FooterLink href="#">Authors</FooterLink>
-			<FooterLink href="#">Press</FooterLink>
-			<FooterLink href="#">Testimonials</FooterLink>
+			<Link to="/Community" type="submit">Authors</Link>
+			<Link to="/Community" type="submit">Press</Link>
+			<Link to="/Community" type="submit">Testimonials</Link>
 		</Column>
 		<Column>
 			<Heading>Services</Heading>
-			<FooterLink href="#">Game Help</FooterLink>
-			<FooterLink href="#">Feedback</FooterLink>
-			<FooterLink href="#">Password Reset</FooterLink>
+			<Link to="/UserRegistration" type="submit">Game Help</Link>
+			<Link to="/UserRegistration" type="submit">Contact</Link>
+			<Link to="/UserRegistration" type="submit">Register</Link>
+			
 		</Column>
 		<Column>
 			<Heading>Community</Heading>
-			<FooterLink href="#">Community</FooterLink>
-			<FooterLink href="#">Store</FooterLink>
-			<FooterLink href="#">Careers</FooterLink>
+			<Link to="/Community" type="submit">Comments</Link>
+			<Link to="/Store" type="submit">Store</Link>
+			<Link to="/Community" type="submit">Careers</Link>
 		</Column>
 		<Column>
 			<Heading>Social Media</Heading>
