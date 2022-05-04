@@ -5,12 +5,11 @@
 
 
 ## Description
-ReactIt is a community where people can share their passions, learn about new 
-things, and ask questions about a variety of topics. ReactIt's goal is to 
-bring individuals together regardless of their geographical location, allowing 
-them to converse and connect with others who share their interests. ReactIt is 
-a secure environment that is regularly monitored by the administrator to 
-prevent abuse and unwanted content.
+Playing the game requires internet and the ability to read. You must also be aware
+this game is for mature audience and not for the feint hearted. Please remember to
+keep all hands and feet inside at all times as you could be eaten by a Zombie.
+Thanks again for flying Alterra the only inter-galactic space agency this side of
+the Milky Way.
 
 
 ## Table of Contents
