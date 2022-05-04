@@ -2,13 +2,13 @@ package com.zombieapocalypse.springbootbackend.controller;
 
 // Imported annotations from lombok dependency
 import com.zombieapocalypse.springbootbackend.model.Account;
-import com.zombieapocalypse.springbootbackend.service.AccountService;
+import com.zombieapocalypse.springbootbackend.service.AccountServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
+// TODO: test request in postman
 /*
  * @RestController will be the controller for our database controls which are the CRUD functions within the service layer package.
  * Think of the @RestController as a TV remote and @Service will hold the buttons to our TV remote. We will use this TV remote to control the database communication
@@ -19,7 +19,7 @@ public class AccountController {
 
      // @Autowire will wire these endpoints with their corresponding CRUD functions. created service instance to implement user services from the service layer package
     @Autowired
-    private AccountService service;
+    private AccountServiceImpl service;
 
 
     // ******************************* ENDPOINTS *******************************
@@ -43,10 +43,6 @@ public class AccountController {
     @GetMapping("/Accounts/{id}")
     public Account findProductById(@PathVariable int id) {
         return service.getAccountById(id);
-    }
-    @GetMapping("/Account/{name}")
-    public Account findAccountByName(@PathVariable String name) {
-        return service.getAccountByName(name);
     }
 
 
