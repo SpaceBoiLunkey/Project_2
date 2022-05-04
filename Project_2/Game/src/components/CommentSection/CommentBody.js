@@ -18,6 +18,36 @@ const CommentBody= () => {
 
     return (
         <div>
+                 <div class="comment-thread">
+                  <details open class="comment" id="comment-1">
+            
+                      <div class="comment-info">
+                      <div class="comment-author">Eric</div>
+                      <p class="m-0">
+                          Some time ago...
+                      </p>
+                  </div> 
+                  <div class="comment-body">
+                      <p>
+                      sdfadfsaf 
+                      </p>
+                  </div>
+                  <div class="replies">
+                  <div class="comment-info">
+                      <div class="comment-author">Admin</div>
+                      <p class="m-0">
+                          later
+                      </p>
+                  </div> 
+                  <div class="comment-body">
+                      <p>
+                      okidoki 
+                      </p>
+                  </div>
+                  </div>
+            
+                  </details>
+                  </div>
             {comments.map((val, key) => {
                 return (
                   <div class="comment-thread">

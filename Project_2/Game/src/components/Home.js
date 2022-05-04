@@ -7,6 +7,7 @@ import {
   ColumnTwo,
   } from "./FooterStyles";
   import { Link } from "react-router-dom";
+  // import PlayNow from "./Home page stuff/PlayNowComponent";
 
 function Home() {
   return (
@@ -16,11 +17,13 @@ function Home() {
       
         Zombie Apocalypse
       </h1>
-      
+      {/* <PlayNow/> */}
       <Container className="pt-5 ">
+        
         <Box >
         <RowTwo>
          <ColumnTwo >
+         
          <br></br>
             <h3>Welcome to your Nightmare</h3>
             <p>
@@ -37,6 +40,7 @@ function Home() {
             </ColumnTwo>
          </RowTwo>
          </Box>
+         
          <BoxTwo>
         <RowTwo>
           <ColumnTwo>
@@ -78,8 +82,9 @@ function Home() {
         </RowTwo>
         </BoxTwo>
       </Container>
-   
+  
     </form>
+    
   );
 }
 
