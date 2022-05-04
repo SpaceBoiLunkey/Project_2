@@ -6,7 +6,6 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@ToString
 @Entity
 @Table(name = "chapter")
 public class Chapter {
