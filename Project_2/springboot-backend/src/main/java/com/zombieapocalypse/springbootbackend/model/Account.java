@@ -11,8 +11,10 @@ import javax.persistence.*;
 @Table(name = "account")
 public class Account {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int accountId;
     private String accountName;
     private String accountPassword;
+    @OneToOne
+    private Chapter chapterId;
 }
