@@ -17,15 +17,52 @@ const CommentBody= () => {
     });
 
     return (
-        <div>
+      
+        <div className="c-inline-block">
+            <div class="comment-thread mt-5 ">
+                  <details open class="comment" id="comment-1">
+            
+                      <div class="comment-info">
+                      <div class="comment-author"><p>Eric</p></div>
+                      <p class="m-0">
+                          Some time ago...
+                      </p>
+                  </div> 
+                  <div class="comment-body">
+                      <p>
+                      I love this game so much make more!
+                      </p>
+                  </div>
+                    <br></br>
+                  <div class="replies">
+                  <div class="comment-info">
+                      
+                      <div class="comment-author"><p>Admin</p></div>
+                      <p class="m-0">
+                          later
+                      </p>
+                  </div> 
+                  <div class="comment-body">
+                      <p>
+                      Thanks, new games coming soon!
+                      </p>
+                  </div>
+                  </div>
+            
+                  </details>
+                  </div>
             {comments.map((val, key) => {
                 return (
-                  <div class="comment-thread">
+                    <div className="c-inline-block rounded opacity-75">
+                  <div class="comment-thread mt-5 rounded">
+                      
                   <details open class="comment" id="comment-1">
             
                       <div class="comment-info">
                       <div class="comment-author">{val.alias}</div>
+                      
                       <p class="m-0">
+                          
                           Some time ago...
                       </p>
                   </div> 
@@ -38,6 +75,7 @@ const CommentBody= () => {
                   <div class="comment-info">
                       <div class="comment-author">{val.admin}</div>
                       <p class="m-0">
+                          Later
                           {val.time}
                       </p>
                   </div> 
@@ -50,7 +88,7 @@ const CommentBody= () => {
             
                   </details>
                   </div>
-                  
+                  </div>
                 );
               })}
         </div>
