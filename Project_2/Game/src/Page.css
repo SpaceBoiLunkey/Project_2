@@ -96,7 +96,7 @@ a {
   flex: 2;
 }
 .block {
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   padding: 1rem;
   margin: 0.5rem;
   border-radius: 0.5rem;
@@ -106,7 +106,8 @@ a {
   text-align: right;
 }
 img.small {
-  max-height: 25rem;
+  max-height: 35rem;
+ 
 }
 button {
   font-size: 0.8rem;
@@ -115,7 +116,7 @@ button {
   border-radius: 0.5rem;
   border: 0.1rem #404040 solid;
   background-color: #f0c040;
-  width: 50%;
+  width: auto;
   cursor: pointer;
 }
 button.add {
@@ -131,4 +132,8 @@ button.badge {
   border: none;
   color: #ffffff;
   width: 1.5rem;
+}
+.navbar .navbar-nav .nav-link:hover {
+  background-color: #b772dd;
+  color: #fff;
 }

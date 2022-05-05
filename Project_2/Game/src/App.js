@@ -5,10 +5,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Footer from './components/Footer';
 import Home from "./components/Home";
 import Login from "./components/Login/Login";
-import Community from './components/Community';
 import Store from './Store';
 import Start from './components/Start';
-import Register from './components/Login/Register';
+import Support from './components/Support'
+
 import ChapterOne from './story/ChapterOne';
 import ChapterTwo from './story/ChapterTwo';
 import ChapterThree from './story/ChapterThree';
@@ -54,16 +54,17 @@ function App() {
                 <Link className="nav-link" to={"/CommentSection"}><h4>Community</h4></Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/UserRegistration"}><h4>Support</h4></Link>
+                <Link className="nav-link" to={"/Support"}><h4>Support</h4></Link>
               </li>
               </ul>
               </div ><div class="collapse navbar-collapse text-start" id="navbarCollapse">
               <ul class="navbar-nav ms-auto mb-2 mb-md-0">
         <li className="nav-item">
+       
                 <Link className="nav-link" to={"/Home"}><h4>Home</h4></Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/Login"}><h4>Play</h4></Link>
+                <Link className="nav-link" to={"/Login"}><h4>Login/Play</h4></Link>
               </li>
 
            
@@ -77,9 +78,9 @@ function App() {
             <Route path="/Home" element={<Home/>} />
             <Route path="/Login" element={<Login/>} />
             <Route path="/Start" element={<Start/>} />
-            <Route path="/Community" element={<Community/>} />
             <Route path="/Store" element={<Store/>} />
-            <Route path="/Register" element={<Register/>} />
+            <Route path="/Support" element={<Support/>} />
+        
             <Route path="/ChapterOne" element={<ChapterOne/>} />
             <Route path="/ChapterTwo" element={<ChapterTwo/>} />
             <Route path="/ChapterThree" element={<ChapterThree/>} />
