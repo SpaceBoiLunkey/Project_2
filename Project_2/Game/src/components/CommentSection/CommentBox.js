@@ -25,11 +25,12 @@ function CommentBox() {
     
     
     return(
-        <div className="container" id="container1">
-        <div className="input-container">
+        <div className="container " id="container1" >
+        <div className="input-container" >
         <form onSubmit={addComment}>
-    
-          <label>Alias:</label>
+    <div className="pt-5">
+          <label><h2>Alias:</h2></label>
+          </div>
           <input
             type="text" name="alias" required
             value={alias}
@@ -37,18 +38,19 @@ function CommentBox() {
                 setAlias(event.target.value);
             }}
           />
-          
-          <label>Comment:</label>
-          <input
+          <div className="pt-3">
+          <label><h2>Comment:</h2></label>
+          </div>
+          <input className="col-8"
             type="text" name="comment" required
             value={comment}
             onChange={(event) => {
                 setComment(event.target.value);
             }}
           />
-             
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
      
-        <button className="button" type="submit" class="button"> Submit </button>
+        <button className="button" type="submit" class="btn btn-secondary btn-sg"> Submit </button>
         </form>
         </div>
         </div>

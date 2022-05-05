@@ -6,8 +6,7 @@ import Footer from './components/Footer';
 import Home from "./components/Home";
 import Login from "./components/Login/Login";
 import Community from './components/Community';
-import Store from './components/Store/Store';
-import Cart from './components/Store/Cart';
+import Store from './Store';
 import Start from './components/Start';
 import Register from './components/Login/Register';
 import ChapterOne from './story/ChapterOne';
@@ -40,7 +39,7 @@ function App() {
     <div className="App ">
       <nav className=" navbar navbar-expand-md navbar-dark bg-dark fixed-top font-link">
         <div className="container-fluid ">
-          <Link className="navbar-brand" to={"/Login"}>
+          <Link className="navbar-brand" to={"/Home"}>
           <img src="./img/ZA.png" width="90" height="90" alt=""></img>
           </Link>
        
@@ -80,7 +79,6 @@ function App() {
             <Route path="/Start" element={<Start/>} />
             <Route path="/Community" element={<Community/>} />
             <Route path="/Store" element={<Store/>} />
-            <Route path="/Cart" element={<Cart/>} />
             <Route path="/Register" element={<Register/>} />
             <Route path="/ChapterOne" element={<ChapterOne/>} />
             <Route path="/ChapterTwo" element={<ChapterTwo/>} />
