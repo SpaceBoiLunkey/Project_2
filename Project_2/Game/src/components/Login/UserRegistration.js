@@ -1,6 +1,12 @@
 import React, { useState} from "react";
 import axios from 'axios';
 import { Link } from "react-router-dom";
+import {
+  Container,
+  Box,
+  RowTwo,
+  ColumnTwo,
+  } from "../FooterStyles";
 function UserRegistration() {
 
     // React States
@@ -54,8 +60,11 @@ function UserRegistration() {
     /***/
 
     const renderForm = (
+  
+  
 
-     
+
+
       <div className="col text-center "  >
         <span class="bg-dark d-inline-block p-5 mr-3 rounded" >
           <form onSubmit={handleSubmit}>
@@ -86,9 +95,12 @@ function UserRegistration() {
     
     <Link to="/Login" type="submit" className=""><h5>Login</h5></Link>
     </div>
+    
           </form>
+          
           </span>
         </div>
+       
       );
     return(
 
@@ -108,6 +120,7 @@ function UserRegistration() {
                 
                 </div>
             </form>
+            
     );
 
 }
