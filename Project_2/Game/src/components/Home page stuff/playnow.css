@@ -1,34 +1,180 @@
 
 
-.container2 {
+.topcon {
     position: relative;
-    width: 50%;
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
   }
   
   /* Make the image responsive */
-  img {
-    width: 100%;
-    height: 50%;
+  .toppic {
+    width: auto;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
   }
   
-  /* Style the button and place it in the middle of the container/image */
- button {
-    position: absolute;
-    top: 60%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: rgb(12, 62, 127);
+  .logopic{
+    position:absolute;
+    top: 10%;
+    left: 1%;
+    width: 25%;
+    height: 30%;
+  }
+
+  .botpic {
+    width: 32%;
+    height: 30%;
+    padding: 2%;
+
+  }
+
+  .botpic:hover {
+    background-color: rgb(255, 255, 255);
+    opacity:0.7 !important;
+    filter:alpha(opacity=70) !important;
+    box-shadow: 0 0 0px #ffffff !important;
+    
+  }
+
+.blackbox{
+    position:absolute;
+    top: 90%;
+    display:inline;
+  height: 100px;
+  width: 150%;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  background-color: rgb(0, 0, 0);
+}
+
+.linkbox1{
+    margin-left: 9%;
+    margin-top: 8%;
     color: white;
-    font-size: 40px;
-    padding: 40px 90px;
+    display:inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    position:absolute;
+
+}
+.linkbox2{
+    margin-left: 4%;
+    margin-top: 8%;
+    color: white;
+    display:inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    position:absolute;
+
+}
+.linkbox3{
+    margin-left: 6%;
+    margin-top: 8%;
+    color: white;
+    display:inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    position:absolute;
+
+}
+
+
+
+.page-break{
+    
+    display:inline;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 5px;
+    
+
+
+}
+  .thumbs{
+    margin-left: auto;
+    margin-right: auto;
+    display:inline-block;
+
+  }
+
+  
+  /* Style the button and place it in the middle of the container/image */
+ .butto {
+    position:absolute;
+    top: 70%;
+    left: 80%;
+    transform: translate(-60%, -70%);
+    -ms-transform: translate(-60%, -70%);
+    background-color: rgb(14, 66, 134);
+    color: white;
+    font-size: 25px;
+    padding: 2% 5%;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    max-width: 100%;
+    max-height: 100%;
   }
   
-  button:hover {
+  .butto:hover {
     background-color: black;
   }
   
-  
+  .head{
+    position:absolute;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 50px;
+    
+  }
+  .body{
+    position:absolute;
+    top: 35%;
+    left: 15%;
+    color: white;
+    font-size: 30px;
+ 
+  }
+.subbody{
+    position:absolute;
+    top: 50%;
+    left: 15%;
+    color: white;
+    font-size: 20px;
+ 
+}
+.otherhead{
+    position:relative;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    
+  }
+
+@media only screen and (max-width : 700px){
+
+    .subbody{
+        width:0;
+        font-size:0;    }
+}
+
+@media only screen and (max-width : 1080px){
+    .logopic{
+        width:0;
+        font-size:0;    }
+}

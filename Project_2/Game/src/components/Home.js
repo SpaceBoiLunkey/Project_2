@@ -7,7 +7,8 @@ import {
   ColumnTwo,
   } from "./FooterStyles";
   import { Link } from "react-router-dom";
-  // import PlayNow from "./Home page stuff/PlayNowComponent";
+  import PlayNow from "./Home page stuff/PlayNowComponent";
+
 
 function Home() {
   return (
@@ -17,37 +18,24 @@ function Home() {
       
         Zombie Apocalypse
       </h1>
-      {/* <PlayNow/> */}
-      <Container className="pt-5 ">
-        
-        <Box >
-        <RowTwo>
-         <ColumnTwo >
-         
-         <br></br>
-            <h3>Welcome to your Nightmare</h3>
-            <p>
-            Get ready to engage in a dazzling new sensation that’s sweeping the internet across the land with this action-packed mobile strategy game—coming soon to Android and iOS devices.</p>   <img
-      src='./img/zombie.png'
-      className='img-thumbnail img-fluid shadow-2-strong'
-      alt='...'
-      style={{ maxWidth: '24rem' }}
-    />
-            <p>With a single act of despairation, Sylvanas Farmers have ripped open the way to the zombie destruction, by cross breeding alien birds with earth chickens. Then sending this mutated poultry to Alterra, an inter-galatic space agency who has now been dragged into all-consuming darkness. An ancient force of death threatens to ensnare and unravel reality. Are your ready to attempt your escape!</p>
+      <div>
+      <PlayNow/>
+      </div>
+      <br/>
 
-            <p className="text-end">Play if you dare!</p>
-            <div className="text-end"><Link to="/Login" type="submit" className="btn btn-secondary btn-lg "><h5>Play Now</h5></Link></div>
-            </ColumnTwo>
-         </RowTwo>
-         </Box>
-         
+      <Container className="pt-5 ">
+
+
+
          <BoxTwo>
         <RowTwo>
           <ColumnTwo>
           <br></br>
             <h3>Playing the Game</h3>
            <p>Playing the game requires internet and the abilty to read. You must also be aware this game is for mature audience and not for the feint hearted.
-           Please rememnber to keep all hands and feet inside at all times as you could be eatin by a Zombie. Thanks again for flying Alterra the only inter-galatic space agency this side of the Milky Way.</p> <p>If you are having technical issue please click the link below.</p> <div className="text-start"><Link to="/Support" type="submit" className="">Get help</Link></div>
+           Please rememnber to keep all hands and feet inside at all times as you could be eatin by a Zombie. Thanks again for flying 
+           Alterra the only inter-galatic space agency this side of the Milky Way.</p> <p>If you are having technical issue please click the link 
+             below.</p> <div className="text-start"><Link to="/Support" type="submit" className="">Get help</Link></div>
             </ColumnTwo>
           </RowTwo> 
           </BoxTwo>
