@@ -14,26 +14,32 @@ const HomeBoxes = () => {
     </div>
 
 
-    <div className="thumbs">
+    <div className="iconrow">
 
-    <Link to="/Support" className="page-break"> 
-    <h3 className="linkbox1">NEED HELP?</h3>
-    {/* <div className="page-break"> */}
+    <div className="indcol">
+    <Link to="/Support" > 
+    <h3 className="linktext">NEED HELP?</h3>
     <img src={help} className="botpic"/>
-    {/* </div> */}
     </Link>
-    <Link to="/Support"  className="page-break">
-    <h3 className="linkbox2">CREAT AN ACCOUNT?</h3>
-    {/* <div className="page-break"> */}
+    </div>
+
+
+    <div className="indcol">
+    <Link to="/Register"  >
+    <h3 className="linktext">CREATE AN ACCOUNT?</h3>
     <img src={spaceSleep} className="botpic"/>
-    {/* </div> */}
     </Link>
-    <Link to="/Support" className="page-break">
-    <h3 className="linkbox3">SHOP THE STORE?</h3>
-    {/* <div className="page-break"> */}
+    </div>
+
+
+
+    <div className="indcol">
+    <Link to="/Store" >
+    <h3 className="linktext">SHOP THE STORE?</h3>
     <img src={zombie} className="botpic"/>
-    {/* </div> */}
     </Link>
+    </div>
+
 
     </div>      
 

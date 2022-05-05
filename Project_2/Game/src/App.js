@@ -10,6 +10,7 @@ import Store from './components/Store/Store';
 import Cart from './components/Store/Cart';
 import Start from './components/Start';
 import Register from './components/Login/Register';
+import Support from './components/Support';
 import ChapterOne from './story/ChapterOne';
 import ChapterTwo from './story/ChapterTwo';
 import ChapterThree from './story/ChapterThree';
@@ -32,7 +33,6 @@ import ChapterNineteen from './story/ChapterNineteen';
 import UserRegistration from './components/Login/UserRegistration';
 import CommentSection from './components/CommentSection/CommentSection';
 import AdminComments from './components/CommentSection/AdminComments';
-import PlayNow from './components/Home page stuff/PlayNowComponent';
 
 function App() {
   return (<Router>
@@ -82,6 +82,8 @@ function App() {
             <Route path="/Store" element={<Store/>} />
             <Route path="/Cart" element={<Cart/>} />
             <Route path="/Register" element={<Register/>} />
+            <Route path="/Support" element={<Support/>} />
+
             <Route path="/ChapterOne" element={<ChapterOne/>} />
             <Route path="/ChapterTwo" element={<ChapterTwo/>} />
             <Route path="/ChapterThree" element={<ChapterThree/>} />
@@ -104,7 +106,6 @@ function App() {
             <Route path="/UserRegistration" element={<UserRegistration/>} />
             <Route path="/CommentSection" element={<CommentSection/>} />
             <Route path="/AdminComments" element={<AdminComments/>} />
-            <Route path="/PlayNow" element={<PlayNow/>} />
 
 
        </Routes>
