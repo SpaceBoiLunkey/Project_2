@@ -7,7 +7,6 @@ import Home from "./components/Home";
 import Login from "./components/Login/Login";
 import Store from './Store';
 import Start from './components/Start';
-import Register from './components/Login/Register';
 import Support from './components/Support';
 import ChapterOne from './story/ChapterOne';
 import ChapterTwo from './story/ChapterTwo';
@@ -31,6 +30,7 @@ import ChapterNineteen from './story/ChapterNineteen';
 import UserRegistration from './components/Login/UserRegistration';
 import CommentSection from './components/CommentSection/CommentSection';
 import AdminComments from './components/CommentSection/AdminComments';
+
 
 function App() {
   return (<Router>
@@ -78,8 +78,8 @@ function App() {
             <Route path="/Login" element={<Login/>} />
             <Route path="/Start" element={<Start/>} />
             <Route path="/Store" element={<Store/>} />
-            <Route path="/Cart" element={<Cart/>} />
-            <Route path="/Register" element={<Register/>} />
+            {/* <Route path="/Cart" element={<Cart/>} />
+            <Route path="/Register" element={<Register/>} /> */}
             <Route path="/Support" element={<Support/>} />
 
             <Route path="/ChapterOne" element={<ChapterOne/>} />

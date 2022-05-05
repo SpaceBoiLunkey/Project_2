@@ -1,5 +1,6 @@
 import React from 'react'
 import {
+  FooterLink,
     Container,
     Row,
     Column,
