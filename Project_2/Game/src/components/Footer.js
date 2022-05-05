@@ -15,12 +15,12 @@ return (
 		<Column>	<Heading>About Us</Heading>
 			<Link to="/Community" type="submit">Authors</Link>
 			<Link to="/Community" type="submit">Press</Link>
-			<Link to="/Community" type="submit">Testimonials</Link>
+			<Link to="/Community" type="submit">About Us</Link>
 		</Column>
 		<Column>
 			<Heading>Services</Heading>
-			<Link to="/UserRegistration" type="submit">Game Help</Link>
-			<Link to="/UserRegistration" type="submit">Contact</Link>
+			<Link to="/Support" type="submit">Game Help</Link>
+			<Link to="/Support" type="submit">Contact</Link>
 			<Link to="/UserRegistration" type="submit">Register</Link>
 			
 		</Column>

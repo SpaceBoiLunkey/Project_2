@@ -60,14 +60,10 @@ function UserRegistration() {
     /***/
 
     const renderForm = (
-      <Container className="pt-5 ">
   
-        
+  
 
 
-<Box>
-  <RowTwo>
-    <ColumnTwo>
 
       <div className="col text-center "  >
         <span class="bg-dark d-inline-block p-5 mr-3 rounded" >
@@ -104,29 +100,7 @@ function UserRegistration() {
           
           </span>
         </div>
-        </ColumnTwo>
-         </RowTwo>
-         </Box>
-         <Box >
-        <RowTwo>
-         <ColumnTwo >
-         <br></br>
-            <h3>Welcome to your Nightmare</h3>
-            <p>
-            Get ready to engage in a dazzling new sensation that’s sweeping the internet across the land with this action-packed mobile strategy game—coming soon to Android and iOS devices.</p>   <img
-      src='./img/zombie.png'
-      className='img-thumbnail img-fluid shadow-2-strong'
-      alt='...'
-      style={{ maxWidth: '24rem' }}
-    />
-            <p>With a single act of despairation, Sylvanas Farmers have ripped open the way to the zombie destruction, by cross breeding alien birds with earth chickens. They have sent out this mutated poultry to Alterra, an inter-galatic space agency who has now been dragged into all-consuming darkness. An ancient force of death threatens to ensnare and unravel reality. Are your ready to attempt your escape!</p>
-
-            <p className="text-end">Play if you dare!</p>
-            <div className="text-end"><Link to="/Login" type="submit" className="btn btn-secondary btn-lg "><h5>Play Now</h5></Link></div>
-            </ColumnTwo>
-         </RowTwo>
-         </Box>
-        </Container>
+       
       );
     return(
 
