@@ -1,6 +1,6 @@
 package com.zombieapocalypse.springbootbackend.service;
 
-import com.zombieapocalypse.springbootbackend.model.entity.AccountEntity;
+import com.zombieapocalypse.springbootbackend.entity.AccountEntity;
 import com.zombieapocalypse.springbootbackend.model.Account;
 import com.zombieapocalypse.springbootbackend.repository.AccountRepository;
 import org.springframework.beans.BeanUtils;

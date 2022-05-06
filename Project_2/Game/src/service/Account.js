@@ -1,50 +1,49 @@
-import React from 'react'
-import APIService from './AccountService'
+import React from 'react';
+import Account from './AccountService';
 
 export default class AccountComponent extends React.Component {
+  constructor(props) {
+    super(props);
 
-    constructor(props) {
-        super(props)
-    
-        this.state = {
-             accounts: []
-        }
-    }
-    
-    componentDidMount(){
-        APIService.getBooks().then((data) => {
-            this.setState({ books: data })
-            console.log(this.state.data)
-          })
-          .catch(function (ex) {
-              console.log('Response parsing failed. Error: ', ex);
-          });;
-    }
+    this.state = {
+      accounts: [],
+    };
+  }
 
-    render() {
-        return (
-            <div>
-                <h2 className="text-center">Book Details</h2>
-                <table className="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Book Id</th>
-                            <th>Book Name</th>
-                            <th>Book Author</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            this.state.books.map(book =>
-                                    <tr key={book.id}>
-                                        <td>{book.id}</td>
-                                        <td>{book.bookName}</td>
-                                        <td>{book.author}</td>
-                                    </tr>
-                            )
-                        }
-                    </tbody>
-                </table>
-            </div>
-        )
-    }
+  componentDidMount() {
+    Account.getAccounts()
+      .then((data) => {
+        this.setState({ accounts: data });
+        console.log(this.state.data);
+      })
+      .catch(function (ex) {
+        console.log('Response parsing failed. Error: ', ex);
+      });
+  }
+
+  render() {
+    return (
+      <div>
+        <h2 className="text-center">Account Details</h2>
+        <table className="table table-striped">
+          <thead>
+            <tr>
+              <th>Account Id</th>
+              <th>Account Username</th>
+              <th>Account Password</th>
+            </tr>
+          </thead>
+          <tbody>
+            {this.state.accounts.map((Account) => (
+              <tr key={Account.id}>
+                <td>{Account.AccountId}</td>
+                <td>{Account.AccountUsername}</td>
+                <td>{Account.AccountPassword}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
+}

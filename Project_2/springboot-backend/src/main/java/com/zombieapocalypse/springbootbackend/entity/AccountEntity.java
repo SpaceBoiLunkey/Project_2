@@ -1,4 +1,4 @@
-package com.zombieapocalypse.springbootbackend.model.entity;
+package com.zombieapocalypse.springbootbackend.entity;
 
 import com.zombieapocalypse.springbootbackend.model.Chapter;
 import lombok.*;

@@ -1,6 +1,6 @@
 package com.zombieapocalypse.springbootbackend.repository;
 
-import com.zombieapocalypse.springbootbackend.model.entity.AccountEntity;
+import com.zombieapocalypse.springbootbackend.entity.AccountEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
