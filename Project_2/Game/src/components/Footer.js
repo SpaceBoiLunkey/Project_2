@@ -13,9 +13,9 @@ return (
 	<Container className="mt-5 ">
 		<Row>
 		<Column>	<Heading>About Us</Heading>
-			<Link to="/Community" type="submit">Authors</Link>
-			<Link to="/Community" type="submit">Press</Link>
-			<Link to="/Community" type="submit">About Us</Link>
+			<Link to="/Authors" type="submit">Authors</Link>
+			<Link to="/CommentSection" type="submit">Press</Link>
+			<Link to="/Authors" type="submit">About Us</Link>
 		</Column>
 		<Column>
 			<Heading>Services</Heading>
@@ -26,7 +26,7 @@ return (
 		</Column>
 		<Column>
 			<Heading>Community</Heading>
-			<Link to="/Community" type="submit">Comments</Link>
+			<Link to="/CommentSection" type="submit">Comments</Link>
 			<Link to="/Store" type="submit">Store</Link>
 			<Link to="/Community" type="submit">Careers</Link>
 		</Column>
