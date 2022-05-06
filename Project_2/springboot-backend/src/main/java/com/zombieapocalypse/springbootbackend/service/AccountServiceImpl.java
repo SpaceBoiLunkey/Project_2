@@ -1,9 +1,10 @@
 package com.zombieapocalypse.springbootbackend.service;
 
-import com.zombieapocalypse.springbootbackend.entity.AccountEntity;
+import com.zombieapocalypse.springbootbackend.model.entity.AccountEntity;
 import com.zombieapocalypse.springbootbackend.model.Account;
 import com.zombieapocalypse.springbootbackend.repository.AccountRepository;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -12,6 +13,7 @@ import java.util.stream.Collectors;
 @Service
 public class AccountServiceImpl implements AccountService{
      // Created AccountRepository instance variable
+    @Autowired
     private AccountRepository repository;
 
     // ******************************* CRUD FUNCTIONS *******************************
@@ -20,6 +22,7 @@ public class AccountServiceImpl implements AccountService{
     public Account createAccount(Account account){
          AccountEntity accountEntity = new AccountEntity();
 
+         // copying all values of parameters to entity using beans
          BeanUtils.copyProperties(account, accountEntity);
          repository.save(accountEntity);
          return account;
@@ -38,8 +41,7 @@ public class AccountServiceImpl implements AccountService{
                 .map(act -> new Account(
                         act.getAccountId(),
                         act.getAccountName(),
-                        act.getAccountPassword(),
-                        act.getChapterId()))
+                        act.getAccountPassword()))
                 .collect(Collectors.toList());
         return accounts;
     }
@@ -62,7 +64,6 @@ public class AccountServiceImpl implements AccountService{
         accountEntity.setAccountId(account.getAccountId());
         accountEntity.setAccountName(account.getAccountName());
         accountEntity.setAccountPassword(account.getAccountPassword());
-        accountEntity.setChapterId(account.getChapterId());
 
         return account;
     }

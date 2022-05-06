@@ -12,6 +12,6 @@ public class Chapter {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long chapterId;
-    private String chapterName;
-    private String chapterDescription;
+//    private String chapterName;
+//    private String chapterDescription;
 }

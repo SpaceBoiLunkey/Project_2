@@ -1,4 +1,4 @@
-package com.zombieapocalypse.springbootbackend.entity;
+package com.zombieapocalypse.springbootbackend.model.entity;
 
 import com.zombieapocalypse.springbootbackend.model.Chapter;
 import lombok.*;
@@ -18,6 +18,6 @@ public class AccountEntity {
     private int accountId;
     private String accountName;
     private String accountPassword;
-    @OneToOne
-    private Chapter chapterId;
+//    @OneToOne
+//    private Chapter chapterId;
 }

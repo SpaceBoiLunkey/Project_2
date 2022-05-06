@@ -1,35 +1,50 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React from 'react'
+import APIService from './AccountService'
 
-const Account = ({ account, deleteAccount }) => {
-    const navigate = useNavigate();
-    const editAccount = (e, id) => {
-        e.preventDefault();
-        navigate(`/editAccount/${id}`);
-    };
+export default class AccountComponent extends React.Component {
 
-    return (
-        <tr key={account.id}>
-            <td className="text-left px-6 py-4 whitespace-nowrap">
-                <div className="text-sm text-gray-500">{account.accountName}</div>
-            </td>
-            <td className="text-left px-6 py-4 whitespace-nowrap">
-                <div className="text-sm text-gray-500">{account.accountPassword}</div>
-            </td>
-            <td className="text-right px-6 py-4 whitespace-nowrap font-medium text-sm">
-                <a
-                    onClick={(e, id) => editAccount(e, account.id)}
-                    className="text-indigo-600 hover:text-indigo-800 px-4 hover:cursor-pointer">
-                    Edit
-                </a>
-                <a
-                    onClick={(e, id) => deleteAccount(e, account.id)}
-                    className="text-indigo-600 hover:text-indigo-800 hover:cursor-pointer">
-                    Delete
-                </a>
-            </td>
-        </tr>
-    );
-};
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+             accounts: []
+        }
+    }
+    
+    componentDidMount(){
+        APIService.getBooks().then((data) => {
+            this.setState({ books: data })
+            console.log(this.state.data)
+          })
+          .catch(function (ex) {
+              console.log('Response parsing failed. Error: ', ex);
+          });;
+    }
 
-export default Account;
+    render() {
+        return (
+            <div>
+                <h2 className="text-center">Book Details</h2>
+                <table className="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Book Id</th>
+                            <th>Book Name</th>
+                            <th>Book Author</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            this.state.books.map(book =>
+                                    <tr key={book.id}>
+                                        <td>{book.id}</td>
+                                        <td>{book.bookName}</td>
+                                        <td>{book.author}</td>
+                                    </tr>
+                            )
+                        }
+                    </tbody>
+                </table>
+            </div>
+        )
+    }
