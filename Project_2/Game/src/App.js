@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from "./components/Home";
 import Login from "./components/Login/Login";
 import Store from './Store';
+import Credits from './story/Credits';
 import Start from './components/Start';
 import Support from './components/Support';
 import ChapterOne from './story/ChapterOne';
@@ -80,6 +81,7 @@ function App() {
             <Route path="/Register" element={<Register/>} /> */}
             <Route path="/Support" element={<Support/>} />
             <Route path="/Authors" element={<Authors/>} />
+            <Route path="/Credits" element={<Credits/>} />
             <Route path="/ChapterOne" element={<ChapterOne/>} />
             <Route path="/ChapterTwo" element={<ChapterTwo/>} />
             <Route path="/ChapterThree" element={<ChapterThree/>} />
