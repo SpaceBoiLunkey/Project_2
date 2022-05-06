@@ -71,8 +71,9 @@ public class AccountServiceImpl implements AccountService{
 
     // DELETE: 1. delete account by id
     @Override
-     public String deleteAccount(int id){
-        repository.deleteById(id);
-        return "account " + id + "removed";
+    public String deleteAccount(int id) {
+        AccountEntity account = repository.findById(id).get();
+        repository.delete(account);
+        return "DELETED ACCOUNT: " + account;
     }
 }

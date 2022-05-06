@@ -3,7 +3,7 @@ import axios from "axios";
 const ACCOUNT_API_BASE_URL = "http://localhost:5432/api/v1/accounts";
 
 class AccountService {
-  saveAccount(Account) {
+  saveAccount(account) {
     return axios.post(ACCOUNT_API_BASE_URL, account);
   }
 

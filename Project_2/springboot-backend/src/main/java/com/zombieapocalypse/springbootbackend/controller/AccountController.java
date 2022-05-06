@@ -1,9 +1,10 @@
 package com.zombieapocalypse.springbootbackend.controller;
 import com.zombieapocalypse.springbootbackend.model.Account;
 import com.zombieapocalypse.springbootbackend.service.AccountService;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
+
 
 
 /* Checklist */
@@ -26,13 +27,14 @@ import java.util.*;
 @RequestMapping("/api/v1/")
 public class AccountController {
 
-     // @Autowire will wire these endpoints with their corresponding CRUD functions. created service instance to implement account services from the service layer package
-    @Autowired
+
+
+    // created service instance to implement account services from the service layer package.
     private AccountService service;
 
 
-    // ******************************* ENDPOINTS *******************************
-    // ENDPOINTS FOR CREATE CRUD FUNCTIONS
+
+    // ENDPOINT FOR CREATE CRUD FUNCTION
     @PostMapping("/accounts")
     public Account addAccount(@RequestBody Account account) {
         return service.createAccount(account);
@@ -40,11 +42,14 @@ public class AccountController {
 
 
 
-    // ENDPOINTS FOR RETRIEVE CRUD FUNCTIONS
+    // ENDPOINT FOR RETRIEVE CRUD FUNCTION
     @GetMapping("/accounts")
     public List<Account> findAllAccounts() {
         return service.getAccounts();
     }
+
+
+    // ENDPOINT FOR RETRIEVE CRUD FUNCTION
     @GetMapping("/accounts/{id}")
     public Account findProductById(@PathVariable int id) {
         return service.getAccountById(id);
@@ -52,15 +57,17 @@ public class AccountController {
 
 
 
-    // ENDPOINTS FOR UPDATE CRUD FUNCTIONS
-    @PutMapping("/update")
-    public Account updateAccount(@RequestBody Account account) {
-        return service.updateAccount(account);
+    // ENDPOINT FOR UPDATE CRUD FUNCTION
+    @PutMapping("/employees/{id}")
+    public ResponseEntity<Account> updateEmployee(@PathVariable int id,
+                                                   @RequestBody Account account) {
+        account = service.updateAccount(id, account);
+        return ResponseEntity.ok(account);
     }
 
 
 
-    // ENDPOINTS FOR DELETE CRUD FUNCTIONS
+    // ENDPOINTS FOR DELETE CRUD FUNCTION
     @DeleteMapping("/delete/{id}")
     public  String deleteAccount(@PathVariable int id) {
         return service.deleteAccount(id);
