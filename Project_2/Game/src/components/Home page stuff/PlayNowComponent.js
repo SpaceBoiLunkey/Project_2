@@ -36,7 +36,7 @@ const PlayNow = () => {
           <Link to="/Login" ><button className="butto">PLAY IF YOU DARE!!</button></Link>
           <div className="blackbox">
     
-    </div>
+         </div>
 
   {/* <button Link to="/Login" className="butto" >Play if you dare!</button> */}
 </div>
