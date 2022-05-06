@@ -32,6 +32,7 @@ import UserRegistration from './components/Login/UserRegistration';
 import CommentSection from './components/CommentSection/CommentSection';
 import AdminComments from './components/CommentSection/AdminComments';
 import TestSection from './components/SupportPageComponents/TestBoxes';
+import Authors from './components/Authors.js';
 
 function App() {
   return (<Router>
@@ -79,6 +80,7 @@ function App() {
             {/* <Route path="/Cart" element={<Cart/>} />
             <Route path="/Register" element={<Register/>} /> */}
             <Route path="/Support" element={<Support/>} />
+            <Route path="/Authors" element={<Authors/>} />
             <Route path="/Credits" element={<Credits/>} />
             <Route path="/ChapterOne" element={<ChapterOne/>} />
             <Route path="/ChapterTwo" element={<ChapterTwo/>} />

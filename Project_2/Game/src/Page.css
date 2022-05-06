@@ -137,3 +137,20 @@ button.badge {
   background-color: #b772dd;
   color: #fff;
 }
+
+.profileLinksFlex {
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+}
+
+.profilePhoto {
+  max-height: 200px;
+  padding: 1em;
+}
+
+.portfolioPhotos {
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+}
