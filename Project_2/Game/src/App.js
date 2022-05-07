@@ -30,7 +30,6 @@ import ChapterNineteen from './story/ChapterNineteen';
 import UserRegistration from './components/Login/UserRegistration';
 import CommentSection from './components/CommentSection/CommentSection';
 import AdminComments from './components/CommentSection/AdminComments';
-import TestSection from './components/SupportPageComponents/TestBoxes';
 
 function App() {
   return (<Router>
@@ -101,7 +100,8 @@ function App() {
             <Route path="/UserRegistration" element={<UserRegistration/>} />
             <Route path="/CommentSection" element={<CommentSection/>} />
             <Route path="/AdminComments" element={<AdminComments/>} />
-            <Route path="/TestSection" element={<TestSection/>} />
+           
+
 
 
        </Routes>

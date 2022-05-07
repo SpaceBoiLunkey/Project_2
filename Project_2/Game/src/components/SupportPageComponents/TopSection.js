@@ -1,87 +1,115 @@
 import { Link } from "react-router-dom";
-import neon from "./SupImg/neon.png";
-import ship from "./SupImg/ship.png";
+import {} from "../HomePageComponents/backgroundimages.css";
+import {
+  IconRow,
+  IndCol,
+  WhiteBoxes,
+  Head,
+  BoxText,
+  Down
+  } from "./SupportSyles";
 
 const TopSection = () => {
-    return (
-<div>
-<div className="topcon2">
-    
-  <img src={neon} className="toppic"/>
+  return (
+    <div>
 
-    <h3 className="head" >
-    <b>
-    ANSWERS HQ!
-    </b></h3>
-    <br/>               
+       {/* this should be the only class name because its the background image  */}
+      <div  className="neonimg">
+        <Head>
+          <b>
+            ANSWERS HQ!
+          </b>
+        </Head>
+      <IconRow >
         
-                        {/* <div > */}
-                        <Link to="/Login" className="oneboxes"> 
-                        <p className="onetext">
-                        <b>READY TO PLAY?</b>
-                        <br/>
-                        <br/>
-                        Playing the game requires internet and the abilty to read. You must also be aware this game is for mature audience and not for the feint hearted. 
-                        <br/>
-                        <br/>
-                        
-                        </p>
-                        <div><p className="down">CLICK ME </p></div>
-                        </Link>
+        <br/>               
+        
+        <IndCol>
+        <Link to="/Login" > 
+        <WhiteBoxes>
+          <BoxText>
+            <b>READY TO PLAY?</b>
+              <br/>
+              <br/>
+                Playing the game requires internet and the abilty to read. You must also be aware this game is for mature audience and not for the feint hearted. 
+              <br/>
+              <br/>
+          </BoxText>
+          <Down><p>
+              CLICK ME 
+            </p></Down>
+            </WhiteBoxes>
+        </Link>
+        </IndCol>
 
-                        <Link to="/Community" className="twoboxes"> 
-                        <p className="onetext">
-                        <b>COMMUNITY!</b>
-                        <br/>
-                        <br/>
-                        Come hang out!                        
-                        <br/>
-                        <br/>
-                        </p>
-                        <div><p className="down">CLICK ME </p></div>
-
-                        </Link>
-
-                        <Link to="/Store" className="thirdboxes"> 
-                        <p className="onetext">
-                        <b>SHOP WITH US!</b>
-                        <br/>
-                        <br/>
-                        Looking for the perfect gift? Something Special by ZoA, we offer a wide selection of beautiful clothes, stickers, collectables, and much more. 
-                        <br/>
-                        <br/>
-                        </p>
-                        <div><p className="down">CLICK ME </p></div>
-
-                        </Link>
-
-
-                        <Link to="/UserRegistration" className="fourboxes"> 
-                        <p className="onetext">
-                        <b>WANT MORE GAMES?</b>
-                        <br/>
-                        <br/>
-                        Register now and be the first to hear about new games!
-                        <br/>
-                        <br/>
-                        </p>
-                        <div><p className="down">CLICK ME </p></div>
-
-                        </Link>
+        <IndCol>
+        <Link to="/Community" > 
+        <WhiteBoxes>
+          <BoxText>
+            <b>
+              COMMUNITY!
+            </b>
+            <br/>
+            <br/>
+              Come hang out!                        
+            <br/>
+            <br/>
+          </BoxText>
+          <Down><p >
+            CLICK ME 
+            </p></Down>
+            </WhiteBoxes>
+        </Link>
+        </IndCol>
 
 
+        <IndCol>
+        <Link to="/Store"> 
+        <WhiteBoxes>
+          <BoxText>
+            <b>
+              SHOP WITH US!
+            </b>
+            <br/>
+            <br/>
+              Looking for the perfect gift? Something Special by ZoA, we offer a wide selection of beautiful clothes, stickers, collectables, and much more. 
+            <br/>
+            <br/>
+          </BoxText>
+          <Down><p>
+            CLICK ME 
+            </p></Down>
+            </WhiteBoxes>
 
-          <div className="blackbox"> </div>
+        </Link>
+        </IndCol>
 
 
+        <IndCol>
+        <Link to="/UserRegistration" > 
+        <WhiteBoxes>
+          <BoxText>
+            <b>
+              WANT MORE GAMES?
+            </b>
+            <br/>
+            <br/>
+              Register now and be the first to hear about new games!
+            <br/>
+            <br/>
+          </BoxText>
+          <Down><p>
+            CLICK ME 
+            </p></Down>
+            </WhiteBoxes>
+        </Link> 
+        </IndCol>
 
-            
+        </IconRow >
+        </div>
 
-                </div>
-                <img src={ship} className="shippic"/>
-
-                </div>
-    );
+    </div>
+  );
 }
 
 export default TopSection;
