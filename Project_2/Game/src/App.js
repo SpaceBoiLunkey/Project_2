@@ -29,8 +29,9 @@ import ChapterSeventeen from './story/ChapterSeventeen';
 import ChapterEighteen from './story/ChapterEighteen';
 import ChapterNineteen from './story/ChapterNineteen';
 import UserRegistration from './components/Login/UserRegistration';
-import CommentSection from './components/CommentSection/CommentSection';
-import AdminComments from './components/CommentSection/AdminComments';
+import CommentSection from './components/CommunityComponents/CommentSection/CommentSection';
+import PopForm from './components/CommunityComponents/Form/PopUpForm';
+import Community from './components/Community';
 
 import Authors from './components/Authors.js';
 
@@ -52,7 +53,7 @@ function App() {
         <li className="nav-item">
                 <Link className="nav-link" to={"/Store"}><h4>Store</h4></Link>
               </li>   <li className="nav-item">
-                <Link className="nav-link" to={"/CommentSection"}><h4>Community</h4></Link>
+                <Link className="nav-link" to={"/Community"}><h4>Community</h4></Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to={"/Support"}><h4>Support</h4></Link>
@@ -103,8 +104,9 @@ function App() {
             <Route path="/ChapterNineteen" element={<ChapterNineteen/>} />
             <Route path="/UserRegistration" element={<UserRegistration/>} />
             <Route path="/CommentSection" element={<CommentSection/>} />
-            <Route path="/AdminComments" element={<AdminComments/>} />
-           
+            <Route path="/PopForm" element={<PopForm/>} />
+            <Route path="/Community" element={<Community/>} />
+
 
 
 

@@ -81,7 +81,7 @@ export default function Login() {
                 <div >
 
                 <Link to="/Start" type="submit" className="btn btn-success btn-lg btn-block"><h5>Login</h5></Link>
-               {/* <button onClick={handleSubmit} className="btn btn-success btn-lg btn-block" type="submit" >Submit</button>*/}
+               {/* <button onClick={handleSubmit} className="btn btn-success btn-lg btn-block" type="submit" >Submit</button> */}
                 <div className='mt-3'>
     
 <Link to="/UserRegistration" type="submit" className=""><h5>Register</h5></Link>

@@ -1,5 +1,6 @@
 import Axios from "axios";
 import { useState} from "react";
+import { BoxForInput } from '../CommunityStyles';
 
 
 
@@ -25,13 +26,14 @@ function CommentBox() {
     
     
     return(
+      <>
         <div className="container " id="container1" >
-        <div className="input-container" >
-        <form onSubmit={addComment}>
-    <div className="pt-5">
+        <BoxForInput>
+        <form >
+         <div className="pt-5">
           <label><h2>Alias:</h2></label>
           </div>
-          <input
+          <input className="form-control"
             type="text" name="alias" required
             value={alias}
             onChange={(event) => {
@@ -41,7 +43,7 @@ function CommentBox() {
           <div className="pt-3">
           <label><h2>Comment:</h2></label>
           </div>
-          <input className="col-8"
+          <input className="form-control" 
             type="text" name="comment" required
             value={comment}
             onChange={(event) => {
@@ -49,11 +51,12 @@ function CommentBox() {
             }}
           />
               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-     
-        <button className="button" type="submit" class="btn btn-secondary btn-sg"> Submit </button>
+        <br/>
+        <button onClick={addComment} type="submit" className="btn btn-success btn-lg btn-block"> Submit </button>
         </form>
+        </BoxForInput>
         </div>
-        </div>
+        </>
     )
     
 };

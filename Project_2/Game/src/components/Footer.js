@@ -26,9 +26,9 @@ return (
 		</Column>
 		<Column>
 			<Heading>Community</Heading>
-			<Link to="/CommentSection" type="submit">Comments</Link>
+			<Link to="/Community" type="submit">Community</Link>
 			<Link to="/Store" type="submit">Store</Link>
-			<Link to="/Community" type="submit">Careers</Link>
+			<Link to="/PopForm" type="submit">Careers</Link>
 		</Column>
 		<Column>
 			<Heading>Social Media</Heading>

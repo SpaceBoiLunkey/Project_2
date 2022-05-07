@@ -37,8 +37,9 @@ import styled from 'styled-components';
   position:absolute;
   text-align: center;
   color: white;
-  font-size: 50px;
+  font-size: 70px;
     padding-right: 1%;
+    font-family: 'Hanalei Fill', cursive;
 
   `;
   
@@ -57,7 +58,10 @@ import styled from 'styled-components';
     width:0;
     font-size:0;    }
 
-
+    @media (max-width : 1380px){
+   
+      top: 47%;
+    }
   
   `;
   export const SubBody = styled.div`
@@ -102,7 +106,7 @@ import styled from 'styled-components';
   :hover {
     background-color: black;
   }
-  @media (max-width : 680px){
+  @media (max-width : 730px){
     bottom:0%;
     left: 20%;
 
@@ -158,7 +162,7 @@ text-align: center;
 vertical-align: middle;
 
 
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
 flex: 50%;
 max-width: 50%;}
 
@@ -238,7 +242,8 @@ export const Head = styled.div`
 position:relative;
 text-align: center;
 color: white;
-font-size: 50px;
+font-size: 60px;
+font-family: 'Hanalei Fill', cursive;
 
 
 `;

@@ -20,9 +20,9 @@ const TopSection = () => {
             ANSWERS HQ!
           </b>
         </Head>
-      <IconRow >
-        
         <br/>               
+
+      <IconRow >
         
         <IndCol>
         <Link to="/Login" > 

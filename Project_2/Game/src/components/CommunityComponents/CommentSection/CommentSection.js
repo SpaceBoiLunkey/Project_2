@@ -5,7 +5,7 @@ import {
   Container,
   RowTwo,
   ColumnTwo,
-  } from "../FooterStyles";
+  } from "../../FooterStyles";
 const CommentSection= () => {
 
 
@@ -20,6 +20,7 @@ const CommentSection= () => {
 
 <br></br>
 <Container>
+  
   <RowTwo>
     <ColumnTwo>
       <h3>Community</h3>

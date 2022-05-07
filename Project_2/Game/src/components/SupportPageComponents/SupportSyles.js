@@ -56,7 +56,8 @@ export const Head = styled.div`
 position:relative;
 text-align: center;
 color: white;
-font-size: 50px;
+font-size: 70px;
+font-family: 'Hanalei Fill', cursive;
 
 
 `;

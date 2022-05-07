@@ -1,6 +1,6 @@
 import Axios from "axios";
 import { useState, useEffect } from "react";
-
+import { BoxForComments, ComBody, Comm, Time,CommInfo,WhiteBoxes,CommThread,Replies,Author } from '../CommunityStyles';
 
 
 
@@ -19,7 +19,8 @@ const CommentBody= () => {
     return (
       
         <div className="c-inline-block">
-            <div class="comment-thread mt-5 ">
+            <BoxForComments>
+            {/* <div class="comment-thread mt-5 ">
                   <details open class="comment" id="comment-1">
             
                       <div class="comment-info">
@@ -50,47 +51,46 @@ const CommentBody= () => {
                   </div>
             
                   </details>
-                  </div>
+                  </div> */}
             {comments.map((val, key) => {
                 return (
-                    <div className="c-inline-block rounded opacity-75">
-                  <div class="comment-thread mt-5 rounded">
+                    <WhiteBoxes>
+                  <CommThread>
                       
-                  <details open class="comment" id="comment-1">
+                  <details open {...Comm} >
             
-                      <div class="comment-info">
-                      <div class="comment-author">{val.alias}</div>
+                      <CommInfo>
+                      <Author><b>{val.alias}</b></Author>
                       
-                      <p class="m-0">
+                      <Time>
                           
                           Some time ago...
-                      </p>
-                  </div> 
-                  <div class="comment-body">
-                      <p>
-                      {val.comment} 
-                      </p>
-                  </div>
-                  <div class="replies">
-                  <div class="comment-info">
-                      <div class="comment-author">{val.admin}</div>
-                      <p class="m-0">
-                          Later
+                      </Time>
+                  </CommInfo> 
+                  <ComBody><b>
+                      {val.comment} </b>
+                  </ComBody>
+                  <br/>
+                  <Replies>
+                  <CommInfo>
+                      <Author><b>{val.admin}</b></Author>
+                      <Time>
                           {val.time}
-                      </p>
-                  </div> 
-                  <div class="comment-body">
-                      <p>
-                      {val.adminreply} 
-                      </p>
-                  </div>
-                  </div>
+                      </Time>
+                  </CommInfo> 
+                  <ComBody><b>
+                      {val.adminreply} </b>
+                  </ComBody>
+                  </Replies>
             
                   </details>
-                  </div>
-                  </div>
+                  </CommThread>
+
+                  </WhiteBoxes>
                 );
               })}
+            </BoxForComments>
+
         </div>
               );
         
