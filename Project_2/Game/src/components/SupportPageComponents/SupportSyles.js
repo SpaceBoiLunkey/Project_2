@@ -19,6 +19,7 @@ export const IndCol = styled.div`
 flex: 25%;
 padding: 1% 1% 1% 1%;
 width: 100%;
+
 @media (max-width: 1100px) {
 flex: 50%;
 max-width: 50%;}
@@ -41,6 +42,8 @@ margin: 1%;
 width: 100%;
 height: 350px;
 background-color: white;
+border-radius: 25px;
+
 
 :hover{
 background-color: rgb(0, 195, 255);
@@ -100,6 +103,7 @@ margin-bottom: 15px;
 border: 1px solid black;
 background-color: rgb(0, 0, 0);
 align-items: center;
+border-radius: 25px;
 
 
 `;

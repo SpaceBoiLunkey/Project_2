@@ -38,7 +38,7 @@ export const Container = styled.div`
 	max-width: 1200px;
 	margin: 0 auto;
 	/* background: red; */
-`
+`;
 
 export const Column = styled.div`
 display: flex;
@@ -79,9 +79,14 @@ grid-template-columns: repeat(auto-fill,
 						minmax(185px, 1fr));
 grid-gap: 70px;
 
+
 @media (max-width: 1000px) {
 	grid-template-columns: repeat(auto-fill,
 						minmax(200px, 1fr));
+						grid-gap: 0px;
+						font-size: 20px;
+
+
 }
 `;
 
@@ -94,7 +99,7 @@ text-decoration: none;
 &:hover {
 	color: green;
 	transition: 200ms ease-in;
-}
+
 `;
 
 export const Heading = styled.p`
@@ -102,4 +107,25 @@ font-size: 24px;
 color: #fff;
 margin-bottom: 40px;
 font-weight: bold;
+`;
+
+export const BlackBar = styled.p`
+  position: position:absolute;
+  width: 100%;
+  text-align: center;
+  
+
+  `;
+
+export const Container2 = styled.div`
+	display: flex;
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	/* background: red; */
+
+`;
+
+export const Padding = styled.div`
+margin-top: 30%;
 `;

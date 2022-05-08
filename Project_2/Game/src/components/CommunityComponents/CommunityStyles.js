@@ -13,6 +13,8 @@ margin-bottom: 15px;
 border: 1px solid black;
 background-color: rgb(0, 0, 0);
 align-items: center;
+border-radius: 25px;
+
 
 @media (max-width : 1080px){
    
@@ -40,7 +42,7 @@ width: 100%;
 height: 100%;
 background-color: white;
 opacity: 90%;
-border-radius: 25px;
+
 `;
 
 //the form box on top
@@ -88,7 +90,7 @@ border-radius: 25px;
 
 export const BoxForComments = styled.div`
 display: inline-block;
-padding: 5%;
+padding: 8%;
 position: relative;
 margin: 1%;
 width: 70%;
@@ -108,7 +110,7 @@ border-radius: 25px;
 export const ComBody = styled.div`
 padding: 0 20px;
 padding-left: 28px;
-font-size: 25px;
+font-size: 20px;
 color: rgb(54, 24, 87);
 word-break: break-word;
 
@@ -140,7 +142,7 @@ export const CommThread = styled.div`
 width: 900px;
 max-width: 100%;
 margin: auto;
-padding: 30px 30px;
+padding: 20px 20px;
 border: 1px solid transparent; /* Removes margin collapse */
 
 
