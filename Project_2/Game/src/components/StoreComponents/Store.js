@@ -1,7 +1,10 @@
-import Header from './components/Header';
-import Main from './components/Main';
-import Basket from './components/Basket';
+import Header from './Header';
+import Main from './Main';
+import Basket from './Basket';
 import data from './data';
+import {
+
+  } from "./StoreStyles";
 import { useState } from 'react';
 function Store() {
   const { products } = data;
@@ -31,6 +34,7 @@ function Store() {
     }
   };
   return (
+   
     <div className="App">
       <Header countCartItems={cartItems.length}></Header>
       <div className="row">
@@ -42,6 +46,7 @@ function Store() {
         ></Basket>
       </div>
     </div>
+
   );
 
             /* <BoxTwo>

@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Footer from './components/Footer';
 import Home from "./components/Home";
 import Login from "./components/Login/Login";
-import Store from './Store';
+
+import Store from './components/StoreComponents/Store';
 import Credits from './story/Credits';
 import Start from './components/Start';
 import Support from './components/Support';

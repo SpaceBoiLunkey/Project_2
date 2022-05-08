@@ -32,7 +32,7 @@ const data = {
     },
     {
       id: '5',
-      name: 'Candy 1',
+      name: 'Zombie Candy',
       price: 4.00,
       image: 'https://mygourmetcottoncandy.com/wp-content/uploads/2021/07/Zombie-Mix-Cotton-Candy-1.jpg',
     },
