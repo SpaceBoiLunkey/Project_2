@@ -99,7 +99,7 @@ text-decoration: none;
 &:hover {
 	color: green;
 	transition: 200ms ease-in;
-
+}
 `;
 
 export const Heading = styled.p`
@@ -110,7 +110,7 @@ font-weight: bold;
 `;
 
 export const BlackBar = styled.p`
-  position: position:absolute;
+  position: auto;
   width: 100%;
   text-align: center;
   

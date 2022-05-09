@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Footer from './components/Footer';
 import Home from "./components/Home";
 import Login from "./components/Login/Login";
-
+import  LoginPage from './pages/LoginPage';
+import { Dashboard } from './pages/dashboard/dashboard';
 import Store from './components/StoreComponents/Store';
 import Credits from './story/Credits';
 import Start from './components/Start';
@@ -74,6 +75,8 @@ function App() {
         </div>
       </nav>
           <Routes>
+          <Route exact path="/LoginPage" component={LoginPage}/>
+          <Route exact path="/dashboard" component={Dashboard}/>
             <Route exact path='/' element={<Home/>} />
             <Route path="/Home" element={<Home/>} />
             <Route path="/Login" element={<Login/>} />
