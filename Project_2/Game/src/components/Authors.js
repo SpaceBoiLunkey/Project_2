@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import kal from "../img/kal.jpg";
-// import donald from "./img/kal.jpg";
-// import Drael from "./img/kal.jpg";
-// import Eric from "./img/kal.jpg";
+import donald from "../img/donald.jpg";
+import drael from "../img/drael.jpg";
+import eric from "../img/eric.jpg";
 
 
 export default function Authors() {
@@ -22,23 +22,20 @@ export default function Authors() {
         Drael Davidson and Eric Vara helped build the website alongside Donald and Kalvin. Eric handled the backend database while Drael helped build a lot of the community pages with Donald. Kalvin built the actual game itself.<br></br>
         <div class="portfolioPhotos">
                     <img src={kal} class="profilePhoto" alt="Kalvin's Logo" />
-                    <img src={kal} class="profilePhoto" alt="Kalvin's Logo" />
-                    <img src={kal} class="profilePhoto" alt="Kalvin's Logo" />
-                    <img src={kal} class="profilePhoto" alt="Kalvin's Logo" />
+                    <img src={donald} class="profilePhoto" alt="Donald's Logo" />
+                    <img src={drael} class="profilePhoto" alt="Drael's Logo" />
+                    <img src={eric} class="profilePhoto" alt="Eric's Logo" />
                     </div>
         <div class="profileLinksFlex">
         <Link to="/portfolioLinkHere" type="submit" className="btn btn-danger btn-lg btn-block mt-5">Kalvin's Portfolio</Link>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    {/* <div className="pg rounded"style={{ backgroundImage: `url(${donald})` }}>
-                </div> */}
+                    
         <Link to="/portfolioLinkHere" type="submit" className="btn btn-danger btn-lg btn-block mt-5">Donald's Portfolio</Link>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        {/* <div className="pg rounded"style={{ backgroundImage: `url(${Drael})` }}>
-                </div> */}
+        
         <Link to="/portfolioLinkHere" type="submit" className="btn btn-danger btn-lg btn-block mt-5">Drael's Portfolio</Link>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    {/* <div className="pg rounded"style={{ backgroundImage: `url(${Eric})` }}>
-                </div> */}
+                    
         <Link to="/portfolioLinkHere" type="submit" className="btn btn-danger btn-lg btn-block mt-5">Eric's Portfolio</Link>
         </div>
         </h4>
