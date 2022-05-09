@@ -127,5 +127,5 @@ export const Container2 = styled.div`
 `;
 
 export const Padding = styled.div`
-margin-top: 30%;
+margin-top: 20%;
 `;
