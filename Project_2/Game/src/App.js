@@ -75,8 +75,8 @@ function App() {
         </div>
       </nav>
           <Routes>
-          <Route exact path="/LoginPage" component={LoginPage}/>
-          <Route exact path="/dashboard" component={Dashboard}/>
+          <Route exact path="/LoginPage" element={<LoginPage/>}/>
+          <Route exact path="/dashboard" element={<Dashboard/>}/>
             <Route exact path='/' element={<Home/>} />
             <Route path="/Home" element={<Home/>} />
             <Route path="/Login" element={<Login/>} />

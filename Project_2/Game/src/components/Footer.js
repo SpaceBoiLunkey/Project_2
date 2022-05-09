@@ -14,7 +14,7 @@ const Footer = () => {
 return (
 	<>
 	<Padding>
-	    <nav className=" navbar navbar-expand-md navbar-dark bg-dark fixed-bottom font-link">
+	    <nav className=" navbar navbar-expand-md navbar-dark bg-dark fixed font-link">
 
 	<BlackBar>
 
