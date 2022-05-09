@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 
 
+
 export default function Login() {
 
 
@@ -96,7 +97,7 @@ export default function Login() {
 
         return (
 
-            <form  className="flex justify-content max-w-xs mx-auto mt-5 "  >
+            <form  className="flex justify-content max-w-xs mx-auto mt-5 mb-5 "  >
                  <div className="pt-5 mt-5">
                    <div class="text-center">
                 <h1 className="font-link ">Zombie Apocalypse</h1>

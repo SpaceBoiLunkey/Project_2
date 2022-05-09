@@ -1,4 +1,4 @@
-import react,{useState} from 'react';
+import React,{useState} from 'react';
 import { connect } from 'react-redux';
 import { authenticate, authFailure, authSuccess } from '../redux/authActions';
 import './loginpage.css';
@@ -68,6 +68,7 @@ const LoginPage=({loading,error,...props})=>{
     console.log("Loading ",loading);
 
     return (
+        
         <div className="login-page">
                    
               
@@ -81,7 +82,7 @@ const LoginPage=({loading,error,...props})=>{
                     <div className="card fat">
                         <div className="card-body">
                             <h4 className="card-title">Login</h4>
-                            
+                            <span class="bg-dark d-inline-block p-5 mr-3 rounded" >
                             <form className="my-login-validation" onSubmit={handleSubmit} noValidate={false}>
                                 <div className="form-group">
                                     <label htmlFor="email">User Name</label>
@@ -136,6 +137,7 @@ const LoginPage=({loading,error,...props})=>{
                                     </button>
                                 </div>
                             </form>
+                            </span>
                             { error &&
                             <Alert style={{marginTop:'20px'}} variant="danger">
                                     {error}
