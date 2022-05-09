@@ -1,17 +1,17 @@
 package com.zombieapocalypse.springbootbackend.model;
 
-import lombok.*;
+/*import lombok.*;
 import javax.persistence.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Entity
-@Table(name = "chapter")
+@Table(name = "chapter")*/
 public class Chapter {
-    @Id
+    /*@Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long chapterId;
-//    private String chapterName;
-//    private String chapterDescription;
+    private String chapterName;
+    private String chapterDescription;*/
 }
