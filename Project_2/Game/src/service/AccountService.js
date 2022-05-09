@@ -11,16 +11,16 @@ class AccountService {
     return axios.get(ACCOUNT_API_BASE_URL);
   }
 
-  deleteAccount(id) {
-    return axios.delete(ACCOUNT_API_BASE_URL + '/' + id);
-  }
-
   getAccountById(id) {
     return axios.get(ACCOUNT_API_BASE_URL + '/' + id);
   }
 
   updateAccount(account, id) {
     return axios.put(ACCOUNT_API_BASE_URL + '/' + id, account);
+  }
+
+  deleteAccount(id) {
+    return axios.delete(ACCOUNT_API_BASE_URL + '/' + id);
   }
 }
 

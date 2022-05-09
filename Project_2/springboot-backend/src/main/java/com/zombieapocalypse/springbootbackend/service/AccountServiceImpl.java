@@ -40,7 +40,9 @@ public class AccountServiceImpl implements AccountService{
                 .stream()
                 .map(act -> new Account(
                         act.getAccountId(),
-                        act.getAccountName(),
+                        act.getAccountEmail(),
+                        act.getAccountFName(),
+                        act.getAccountLName(),
                         act.getAccountPassword()))
                 .collect(Collectors.toList());
         return accounts;
@@ -62,9 +64,10 @@ public class AccountServiceImpl implements AccountService{
         AccountEntity accountEntity
                 = repository.findById(id).get();
         accountEntity.setAccountId(account.getAccountId());
-        accountEntity.setAccountName(account.getAccountName());
+        accountEntity.setAccountEmail(account.getAccountEmail());
+        accountEntity.setAccountFName(account.getAccountFName());
+        accountEntity.setAccountLName(account.getAccountLName());
         accountEntity.setAccountPassword(account.getAccountPassword());
-
         return account;
     }
 
