@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import { Container, Box, RowTwo, ColumnTwo } from '../FooterStyles';
+// import {
+//   Container,
+//   Box,
+//   RowTwo,
+//   ColumnTwo,
+//   } from "../FooterStyles";
 function UserRegistration() {
   // React States
   const [errorMessages, setErrorMessages] = useState({});
@@ -183,6 +188,18 @@ function UserRegistration() {
       </div>
     </form>
   );
+  /* <Box>
+         <RowTwo>
+          <ColumnTwo>
+          <br></br>
+            <h3>Create an Account</h3>
+           <p> Online gaming refers to playing games over the internet that incorporate virtual worlds consisting of numerous players simultaneously. Online games are widely popular amongst children and young adults who use mobile devices or games consoles to play games. These games facilitate gamers in playing against or with other players through a computer network, mainly over the internet.</p>
+
+<p>Online gaming caters to a diverse range of interests such as sports games, action games, card games, mission-based games, quiz games, quests, and more. Completing challenges and connecting with online players thrill players. Moreover, the introduction of fun elements such as leaderboards and tournaments satiate the adrenaline rush that most players seek while playing online games. typesetting, remaining essentially unchanged.</p> <p>Playing CYOA ZA is easy just hit the button to register and your seconds away from fun!</p><div className="text-end"><Link to="/UserRegistration" type="submit" className="btn btn-secondary btn-lg "><h5>Register</h5></Link></div>
+            </ColumnTwo>
+            </RowTwo>
+            </Box>
+ */
 }
 
 export default UserRegistration;
