@@ -125,8 +125,8 @@ function UserRegistration() {
 
  
     );
-              /* <Box>   
-         <RowTwo>        
+              /* <Box>
+         <RowTwo>
           <ColumnTwo>
           <br></br>
             <h3>Create an Account</h3>
