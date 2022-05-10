@@ -33,7 +33,7 @@ public class AccountController {
     private AccountService service;
 
     // ENDPOINT FOR CREATE CRUD FUNCTION
-    @PostMapping("/accounts")
+    @PostMapping("/account")
     public Account addAccount(@RequestBody Account account) {
         return service.createAccount(account);
     }
@@ -45,13 +45,13 @@ public class AccountController {
     }
 
     // ENDPOINT FOR RETRIEVE CRUD FUNCTION
-    @GetMapping("/accounts/{id}")
+    @GetMapping("/account/{id}")
     public Account findProductById(@PathVariable int id) {
         return service.getAccountById(id);
     }
 
     // ENDPOINT FOR UPDATE CRUD FUNCTION
-    @PutMapping("/accounts/{id}")
+    @PutMapping("/account/{id}")
     public ResponseEntity<Account> updateEmployee(@PathVariable int id,
                                                    @RequestBody Account account) {
         account = service.updateAccount(id, account);
@@ -59,7 +59,7 @@ public class AccountController {
     }
 
     // ENDPOINTS FOR DELETE CRUD FUNCTION
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/account/{id}")
     public  String deleteAccount(@PathVariable int id) {
         return service.deleteAccount(id);
     }
