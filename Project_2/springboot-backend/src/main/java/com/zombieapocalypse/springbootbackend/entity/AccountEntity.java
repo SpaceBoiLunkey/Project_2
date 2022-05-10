@@ -1,6 +1,5 @@
 package com.zombieapocalypse.springbootbackend.entity;
 
-import com.zombieapocalypse.springbootbackend.model.Chapter;
 import lombok.*;
 import javax.persistence.*;
 
@@ -10,14 +9,11 @@ import javax.persistence.*;
 @Data
 @Table(name = "accounts")
 public class AccountEntity {
-
-    // defining properties in database
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int accountId;
-    private String accountName;
+    private String accountEmail;
+    private String accountFName;
+    private String accountLName;
     private String accountPassword;
-    @OneToOne
-    private Chapter chapterId;
 }

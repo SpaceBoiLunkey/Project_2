@@ -12,14 +12,14 @@ function UserRegistration() {
     // React States
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState();
-  
+
 
   const errors = {
     email: "this email id is already registered",
   };
 
   const handleSubmit = (event) => {
-    
+
     //Prevent page reload
     event.preventDefault();
 
@@ -49,7 +49,7 @@ function UserRegistration() {
         setIsSubmitted(true);
     })
 });
-    
+
   };
 
   const renderErrorMessage = (name) =>
@@ -60,8 +60,8 @@ function UserRegistration() {
     /***/
 
     const renderForm = (
-  
-  
+
+
 
 
 
@@ -73,7 +73,7 @@ function UserRegistration() {
               <input type="email" name="email" required className="form-control" placeholder="Enter Email" />
               {renderErrorMessage("email")}
             </div>
-            
+
             <div className="input-container">
               <label><h5>First Name</h5></label>
               <input type="text" name="firstname" required className="form-control" placeholder="Enter Fisrt Name"/>
@@ -92,15 +92,15 @@ function UserRegistration() {
               <input class="button" type="submit" />
     </div>*/}
                          <div className='mt-3'>
-    
+
     <Link to="/Login" type="submit" className=""><h5>Login</h5></Link>
     </div>
-    
+
           </form>
-          
+
           </span>
         </div>
-       
+
       );
     return(
 
@@ -111,13 +111,13 @@ function UserRegistration() {
      <br></br>
 
      <h3 > Account Register</h3>
-        {isSubmitted ? 
-                     <div>User Registered successfully </div>   
+        {isSubmitted ?
+                     <div>User Registered successfully </div>
         : renderForm}
     <br></br>
                 </div>
                 <br></br><br></br><br></br>
-                
+
                 </div>
             </form>
 

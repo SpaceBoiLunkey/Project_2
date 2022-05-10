@@ -1,7 +1,6 @@
 package com.zombieapocalypse.springbootbackend.model;
 
 import lombok.*;
-import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
@@ -9,7 +8,8 @@ import javax.persistence.*;
 @ToString
 public class Account {
     private int accountId;
-    private String accountName;
+    private String accountEmail;
+    private String accountFName;
+    private String accountLName;
     private String accountPassword;
-    private Chapter chapterId;
 }

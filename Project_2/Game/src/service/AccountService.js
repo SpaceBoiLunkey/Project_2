@@ -1,6 +1,6 @@
-import axios from "axios";
+import axios from 'axios';
 
-const ACCOUNT_API_BASE_URL = "http://localhost:5432/api/v1/accounts";
+const ACCOUNT_API_BASE_URL = 'http://localhost:8080/api/v1/accounts';
 
 class AccountService {
   saveAccount(account) {
@@ -11,16 +11,16 @@ class AccountService {
     return axios.get(ACCOUNT_API_BASE_URL);
   }
 
-  deleteAccount(id) {
-    return axios.delete(ACCOUNT_API_BASE_URL + "/" + id);
-  }
-
   getAccountById(id) {
-    return axios.get(ACCOUNT_API_BASE_URL + "/" + id);
+    return axios.get(ACCOUNT_API_BASE_URL + '/' + id);
   }
 
   updateAccount(account, id) {
-    return axios.put(ACCOUNT_API_BASE_URL + "/" + id, account);
+    return axios.put(ACCOUNT_API_BASE_URL + '/' + id, account);
+  }
+
+  deleteAccount(id) {
+    return axios.delete(ACCOUNT_API_BASE_URL + '/' + id);
   }
 }
 
