@@ -56,7 +56,9 @@ function UserRegistration() {
   name === errorMessages.name && (
     <div className="error">{errorMessages.message}</div>
   );
-
+  function refreshPage() {
+    window.location.reload(false);
+  }
     /***/
 
     const renderForm = (
@@ -87,7 +89,7 @@ function UserRegistration() {
               <input type="password" name="password" required className="form-control" placeholder="Enter password"/>
             </div>
             <br></br>
-            <button onClick={handleSubmit} className="btn btn-success btn-lg btn-block" type="submit" >Submit</button>
+            <button  onClick={refreshPage} className="btn btn-success btn-lg btn-block" type="submit" >Submit</button>
           {/*  <div className="button-container">
               <input class="button" type="submit" />
     </div>*/}
