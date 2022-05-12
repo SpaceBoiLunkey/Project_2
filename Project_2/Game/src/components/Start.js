@@ -17,14 +17,17 @@ function Start() {
           Start New Game
         </Link>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <Link
+        <Link
           to="/Credits"
           type="submit"
           className="btn btn-warning btn-lg btn-block "
         >
           Credits
-  </Link>
-        <div className="bg rounded" style={{ backgroundImage: `url(${background})` }}>
+        </Link>
+        <div
+          className="bg rounded"
+          style={{ backgroundImage: `url(${background})` }}
+        >
           <div className="flex justify-content max-w-xs mx-auto mt-5"></div>
         </div>
       </div>

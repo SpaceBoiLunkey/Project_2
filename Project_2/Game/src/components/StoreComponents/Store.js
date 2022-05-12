@@ -2,9 +2,7 @@ import Header from './Header';
 import Main from './Main';
 import Basket from './Basket';
 import data from './data';
-import {
-
-  } from "./StoreStyles";
+import {} from './StoreStyles';
 import { useState } from 'react';
 function Store() {
   const { products } = data;
@@ -34,7 +32,6 @@ function Store() {
     }
   };
   return (
-   
     <div className="App">
       <Header countCartItems={cartItems.length}></Header>
       <div className="row">
@@ -46,10 +43,9 @@ function Store() {
         ></Basket>
       </div>
     </div>
-
   );
 
-            /* <BoxTwo>
+  /* <BoxTwo>
             <RowTwo>
             <ColumnTwo>
             <br></br>
@@ -69,6 +65,6 @@ function Store() {
         </RowTwo>
         </BoxTwo>
       </Container> */
-    }
+}
 
 export default Store;
