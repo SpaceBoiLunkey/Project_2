@@ -1,7 +1,7 @@
 import Header from './Header';
 import Main from './Main';
 import Basket from './Basket';
-import data from './data';
+import data from './Data';
 import {} from './StoreStyles';
 import { useState } from 'react';
 function Store() {

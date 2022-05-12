@@ -6,13 +6,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
-@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 public class AccountController {
 
-    // created service instance to implement account services from the service layer package.
     @Autowired
     private AccountService service;
+
+
 
     // ENDPOINT FOR CREATE CRUD FUNCTION
     @PostMapping("/account")
@@ -20,17 +21,23 @@ public class AccountController {
         return service.createAccount(account);
     }
 
+
+
     // ENDPOINT FOR RETRIEVE CRUD FUNCTION
     @GetMapping("/accounts")
     public List<Account> findAllAccounts() {
         return service.getAccounts();
     }
 
+
+
     // ENDPOINT FOR RETRIEVE CRUD FUNCTION
     @GetMapping("/account/{id}")
     public Account findProductById(@PathVariable int id) {
         return service.getAccountById(id);
     }
+
+
 
     // ENDPOINT FOR UPDATE CRUD FUNCTION
     @PutMapping("/account/{id}")
@@ -40,6 +47,8 @@ public class AccountController {
         return ResponseEntity.ok(account);
     }
 
+
+    
     // ENDPOINTS FOR DELETE CRUD FUNCTION
     @DeleteMapping("/account/{id}")
     public  String deleteAccount(@PathVariable int id) {
