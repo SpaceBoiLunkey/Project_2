@@ -18,7 +18,7 @@ const Footer = () => {
           <BlackBar>
             <Container2>
               <Row>
-                <div class="collapse navbar-collapse " id="navbarCollapse2">
+                <div className="collapse navbar-collapse " id="navbarCollapse2">
                   <Column>
                     <Heading>About Us</Heading>
                     <Link to="/Authors" type="submit">
@@ -32,7 +32,7 @@ const Footer = () => {
                     </Link>
                   </Column>
                 </div>
-                <div class="collapse navbar-collapse " id="navbarCollapse2">
+                <div className="collapse navbar-collapse " id="navbarCollapse2">
                   <Column>
                     <Heading>Services</Heading>
                     <Link to="/Support" type="submit">
@@ -46,7 +46,7 @@ const Footer = () => {
                     </Link>
                   </Column>
                 </div>
-                <div class="collapse navbar-collapse " id="navbarCollapse2">
+                <div className="collapse navbar-collapse " id="navbarCollapse2">
                   <Column>
                     <Heading>Community</Heading>
                     <Link to="/Community" type="submit">
@@ -60,7 +60,7 @@ const Footer = () => {
                     </Link>
                   </Column>
                 </div>
-                <div class="collapse navbar-collapse " id="navbarCollapse2">
+                <div className="collapse navbar-collapse " id="navbarCollapse2">
                   <Column>
                     <Heading>Social Media</Heading>
                     <FooterLink href="https://www.facebook.com/profile.php?id=100081142293284">
@@ -84,7 +84,7 @@ const Footer = () => {
               </Row>
 
               <button
-                class="navbar-toggler"
+                className="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse2"
@@ -92,7 +92,7 @@ const Footer = () => {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
               </button>
 
               <Container>

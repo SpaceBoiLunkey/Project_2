@@ -8,7 +8,7 @@ function Start() {
     <div className="col text-center pt-5">
       <h1 className="font-link">Zombie Apocalypse</h1>
       <br></br>
-      <div class="container">
+      <div className="container">
         <Link
           to="/ChapterOne"
           type="submit"

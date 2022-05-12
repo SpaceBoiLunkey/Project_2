@@ -55,21 +55,21 @@ const AdminComments = () => {
       {comments.map((val, key) => {
         return (
           <>
-            <div class="comment-thread">
-              <details open class="comment" id="comment-1">
-                <div class="comment-info">
-                  <div class="comment-author">{val.alias}</div>
-                  <p class="m-0">Some time ago...</p>
+            <div className="comment-thread">
+              <details open className="comment" id="comment-1">
+                <div className="comment-info">
+                  <div className="comment-author">{val.alias}</div>
+                  <p className="m-0">Some time ago...</p>
                 </div>
-                <div class="comment-body">
+                <div className="comment-body">
                   <p>{val.comment}</p>
                 </div>
-                <div class="replies">
-                  <div class="comment-info">
-                    <div class="comment-author">{val.admin}</div>
-                    <p class="m-0">{val.time}</p>
+                <div className="replies">
+                  <div className="comment-info">
+                    <div className="comment-author">{val.admin}</div>
+                    <p className="m-0">{val.time}</p>
                   </div>
-                  <div class="comment-body">
+                  <div className="comment-body">
                     <p>{val.adminreply}</p>
                   </div>
                 </div>

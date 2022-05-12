@@ -47,11 +47,11 @@ function App() {
           <img src="./img/ZA.png" width="90" height="90" alt=""></img>
           </Link>
 
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
-          <div class="collapse navbar-collapse " id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <div className="collapse navbar-collapse " id="navbarCollapse">
+        <ul className="navbar-nav me-auto mb-2 mb-md-0">
         <li className="nav-item">
                 <Link className="nav-link" to={"/Store"}><h4>Store</h4></Link>
               </li>   <li className="nav-item">
@@ -61,8 +61,8 @@ function App() {
                 <Link className="nav-link" to={"/Support"}><h4>Support</h4></Link>
               </li>
               </ul>
-              </div ><div class="collapse navbar-collapse text-start" id="navbarCollapse">
-                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              </div ><div className="collapse navbar-collapse text-start" id="navbarCollapse">
+                <ul className="navbar-nav ms-auto mb-2 mb-md-0">
         <li className="nav-item">
 
                 <Link className="nav-link" to={"/Home"}><h4>Home</h4></Link>
