@@ -25,8 +25,7 @@ import com.thecodeveal.app.responses.LoginResponse;
 import com.thecodeveal.app.responses.UserInfo;
 
 @RestController
-@RequestMapping("/api/v1")
-@CrossOrigin
+
 public class AuthenticationController {
 
 	@Autowired

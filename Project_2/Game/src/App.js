@@ -35,7 +35,7 @@ import CommentSection from './components/CommunityComponents/CommentSection/Comm
 import PopForm from './components/CommunityComponents/Form/PopUpForm';
 import Community from './components/Community';
 
-import Authors from './components/Authors.js';
+
 
 function App() {
   return (<Router>
@@ -85,7 +85,7 @@ function App() {
             {/* <Route path="/Cart" element={<Cart/>} />
             <Route path="/Register" element={<Register/>} /> */}
             <Route path="/Support" element={<Support/>} />
-            <Route path="/Authors" element={<Authors/>} />
+          
             <Route path="/Credits" element={<Credits/>} />
             <Route path="/ChapterOne" element={<ChapterOne/>} />
             <Route path="/ChapterTwo" element={<ChapterTwo/>} />
