@@ -62,7 +62,7 @@ function App() {
               </li>
               </ul>
               </div ><div class="collapse navbar-collapse text-start" id="navbarCollapse">
-              <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
         <li className="nav-item">
        
                 <Link className="nav-link" to={"/Home"}><h4>Home</h4></Link>
