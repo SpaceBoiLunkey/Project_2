@@ -23,7 +23,7 @@ import {
 export default function credits() {
   return (
       <container>
-           <div class="text-center">   
+           <div class="text-center">
                             <h1 className="font-link">Zombie Apocalypse</h1>
                             <div className="font-link">credits</div>
                         </div>
@@ -62,7 +62,7 @@ export default function credits() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={win} 
+      src={win}
       alt="Third slide"
     />
     <Carousel.Caption> <div className="text-center"><h2>Thanks for Playing</h2></div>
@@ -77,7 +77,7 @@ export default function credits() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={meetingRoom} 
+      src={meetingRoom}
       alt="Third slide"
     />
     <Carousel.Caption> <div className="text-center"><h2>Thanks for Playing</h2></div>
@@ -92,7 +92,7 @@ export default function credits() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={spacefood} 
+      src={spacefood}
       alt="Third slide"
     />
     <Carousel.Caption> <div className="text-center"><h2>Thanks for Playing</h2></div>
@@ -107,7 +107,7 @@ export default function credits() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={Dead} 
+      src={Dead}
       alt="Third slide"
     />
     <Carousel.Caption> <div className="text-center"><h2>Thanks for Playing</h2></div>
@@ -122,7 +122,7 @@ export default function credits() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={door} 
+      src={door}
       alt="Third slide"
     />
     <Carousel.Caption> <div className="text-center"><h2>Thanks for Playing</h2></div>
@@ -137,7 +137,7 @@ export default function credits() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={emptySpace} 
+      src={emptySpace}
       alt="Third slide"
     />
     <Carousel.Caption> <div className="text-center"><h2>Thanks for Playing</h2></div>
@@ -152,7 +152,7 @@ export default function credits() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={spaceSleep} 
+      src={spaceSleep}
       alt="Third slide"
     />
     <Carousel.Caption> <div className="text-center"><h2>Thanks for Playing</h2></div>
@@ -167,7 +167,7 @@ export default function credits() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={starved} 
+      src={starved}
       alt="Third slide"
     />
     <Carousel.Caption> <div className="text-center"><h2>Thanks for Playing</h2></div>
@@ -182,7 +182,7 @@ export default function credits() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={gun} 
+      src={gun}
       alt="Third slide"
     />
     <Carousel.Caption> <div className="text-center"><h2>Thanks for Playing</h2></div>
@@ -197,7 +197,7 @@ export default function credits() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={stuck} 
+      src={stuck}
       alt="Third slide"
     />
     <Carousel.Caption> <div className="text-center"><h2>Thanks for Playing</h2></div>
@@ -212,7 +212,7 @@ export default function credits() {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src={zombie} 
+      src={zombie}
       alt="Third slide"
     />
     <Carousel.Caption> <div className="text-center"><h2>Thanks for Playing</h2></div>
@@ -249,10 +249,10 @@ export default function credits() {
 </div>
 <form  className="flex justify-content max-w-xs mx-auto mt-5" >
                  <div className="pt-5">
+
                         <div class="text-center">   
                             <h1 className="font-link">Zombie Apocalypse</h1>
                         </div>
-                      
                         <br></br>
             <div>
         <h4><br></br>
@@ -274,7 +274,7 @@ export default function credits() {
         
         <FooterLink href="/portfolioLinkHere" type="submit" className="btn btn-danger btn-lg btn-block mt-5">Drael's Portfolio</FooterLink>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    
+                   
         <FooterLink href="https://app.revature.com/profile/Vara78/99cd4e5906b72fd0e8198208cc9cd829" type="submit" className="btn btn-danger btn-lg btn-block mt-5">Eric's Portfolio</FooterLink>
         </div>
         </h4>

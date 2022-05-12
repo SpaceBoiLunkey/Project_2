@@ -1,84 +1,79 @@
 /* ON SUPPORT PAGE */
 
-  .neonimg{
-    background: url(../SupportPageComponents/SupportImages/neon.png);
-    background-repeat: no-repeat;
-    background-size:100% 100%;    
-    background-position: center;
-    background-attachment: scroll;
-    max-width: 100%;
-    height: auto;
-    display: block; 
-    z-index: 1;
-    padding: 14%;
-
-  }
+.neonimg {
+  background: url(../SupportPageComponents/SupportImages/neon.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: scroll;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  z-index: 1;
+  padding: 14%;
+}
 /* ON SUPPORT PAGE */
-  .shipimg{
-    background: url(../SupportPageComponents/SupportImages/ship.png);
-    background-repeat: no-repeat;
-    background-size:90% 90%;    
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;    
-    max-width: 100%;
-    height: auto;
-    display: block; 
-    z-index: 1;
-    padding: 14%;
-    
-  }
+.shipping {
+  background: url(../SupportPageComponents/SupportImages/ship.png);
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  z-index: 1;
+  padding: 14%;
+}
 
 /* ON HOME PAGE */
-  .winimg{
-    background: url(../HomePageComponents/HomeImg/win.jpg);
-    background-repeat: no-repeat;
-    background-size:90% 90%;    
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;    
-    max-width: 100%;
-    height: 80%;
-    display: block; 
-    z-index: 1;
-    padding: 30%;
-    margin-top: 100px;
-
-  }
+.winimg {
+  background: url(../HomePageComponents/HomeImg/win.jpg);
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  max-width: 100%;
+  height: 80%;
+  display: block;
+  z-index: 1;
+  padding: 30%;
+  margin-top: 100px;
+}
 
 /* ON COMMUNITY PAGE */
-.neoncommunityimg{
+.neoncommunityimg {
   background: url(../CommunityComponents/Communityimages/NeonWall.jpeg);
   background-repeat: no-repeat;
-  background-size:100% 100%;    
+  background-size: 100% 100%;
   background-position: center;
   background-attachment: scroll;
   max-width: 100%;
   height: 100%;
-  display: block; 
+  display: block;
   z-index: 1;
   padding: 14%;
   opacity: 100%;
   min-width: 50%;
-
 }
 
-.spaceimg{
+.spaceimg {
   background: url(../CommunityComponents/Communityimages/emptySpace.jpg);
   background-repeat: no-repeat;
-  background-size:100% 100%;
+  background-size: 100% 100%;
   background-position: center;
   background-attachment: fixed;
   max-width: 100%;
   height: 100%;
-  display: block; 
+  display: block;
   z-index: 1;
   padding: 10%;
   opacity: 100%;
   min-width: 50%;
-
 }
- /* ON FORM */
-textarea{
+/* ON FORM */
+textarea {
   height: 15em;
 }

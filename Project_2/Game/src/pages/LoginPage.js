@@ -25,21 +25,21 @@ const LoginPage=({loading,error,...props})=>{
                 props.history.push('/dashboard');
             }
             else{
-               props.loginFailure('Something Wrong!Please Try Again'); 
+               props.loginFailure('Something Wrong!Please Try Again');
             }
 
 
         }).catch((err)=>{
 
             if(err && err.response){
-            
+
             switch(err.response.status){
                 case 401:
                     console.log("401 status");
                     props.loginFailure("Authentication Failed.Bad Credentials");
                     break;
                 default:
-                    props.loginFailure('Something Wrong!Please Try Again'); 
+                    props.loginFailure('Something Wrong!Please Try Again');
 
             }
 
@@ -47,14 +47,14 @@ const LoginPage=({loading,error,...props})=>{
             else{
                 props.loginFailure('Something Wrong!Please Try Again');
             }
-                
 
-            
+
+
 
         });
         //console.log("Loading again",loading);
 
-        
+
     }
 
     const handleChange = (e) => {
@@ -69,30 +69,29 @@ const LoginPage=({loading,error,...props})=>{
 
     return (
         <div className="login-page">
-                   
-              
-                                            
+
+
+
         <section className="h-100">
         <div className="container h-100">
-       
+
             <div className="row justify-content-md-center h-100">
                 <div className="card-wrapper">
 
                     <div className="card fat">
                         <div className="card-body">
                             <h4 className="card-title">Login</h4>
-                            
                             <form className="my-login-validation" onSubmit={handleSubmit} noValidate={false}>
                                 <div className="form-group">
                                     <label htmlFor="email">User Name</label>
                                     <input id="username" type="text" className="form-control" minLength={5} value={values.userName} onChange={handleChange} name="userName" required />
-                                    
+
                                         <div className="invalid-feedback">
                                             UserId is invalid
                                         </div>
-                                    
-                                    
-                                    
+
+
+
                                 </div>
 
                                 <div className="form-group">
@@ -113,7 +112,7 @@ const LoginPage=({loading,error,...props})=>{
                                         <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
                                      </div>
                                 </div>
-                                
+
 
                                 <div className="form-group m-0">
                                     <button type="submit" className="btn btn-primary">
@@ -142,8 +141,8 @@ const LoginPage=({loading,error,...props})=>{
                                 </Alert>
 
                             }
-                            
-        
+
+
                         </div>
                     </div>
                 </div>
@@ -154,7 +153,7 @@ const LoginPage=({loading,error,...props})=>{
     )
 
 
-    
+
 }
 
 const mapStateToProps=({auth})=>{

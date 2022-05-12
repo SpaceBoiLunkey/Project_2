@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import AccountService from '../../service/AccountService';
 
@@ -11,22 +10,19 @@ const UserRegistration = () => {
     password: '',
   });
 
-  const navigate = useNavigate();
-
   const handleChange = (e) => {
     const value = e.target.value;
     setAccount({ ...account, [e.target.name]: value });
   };
 
-  const saveAccount = (e) => {
-    e.preventDefault();
+  const saveAccount = () => {
     AccountService.saveAccount(account)
       .then((response) => {
-        console.log(response);
-        navigate('/accountList');
+        console.log(response.status);
+        console.log(response.data);
       })
       .catch((error) => {
-        console.log(error);
+        console.log('failed to create new account');
       });
   };
 

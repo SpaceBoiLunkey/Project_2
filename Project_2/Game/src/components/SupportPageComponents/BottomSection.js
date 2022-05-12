@@ -1,17 +1,14 @@
-import SocialIcons from "./SocialIcons";
-
+import SocialIcons from './SocialIcons';
 
 const BottomSection = () => {
   return (
     <div>
-
-       {/* this should be the only class name because its the background image  */}
-      <div  className="shipimg">
-        <SocialIcons/>
+      {/* this should be the only class name because its the background image  */}
+      <div className="shipping">
+        <SocialIcons />
+      </div>
     </div>
-    </div>
-
   );
-}
+};
 
 export default BottomSection;

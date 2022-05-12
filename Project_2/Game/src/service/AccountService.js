@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const ACCOUNT_API_BASE_URL = 'http://localhost:8080/api/v1/accounts';
+const ACCOUNT_API_BASE_URL = 'http://localhost:8080/accounts';
 
 class AccountService {
   saveAccount(account) {
