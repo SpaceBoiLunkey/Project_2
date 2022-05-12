@@ -81,7 +81,6 @@ const LoginPage=({loading,error,...props})=>{
                     <div className="card fat">
                         <div className="card-body">
                             <h4 className="card-title">Login</h4>
-
                             <form className="my-login-validation" onSubmit={handleSubmit} noValidate={false}>
                                 <div className="form-group">
                                     <label htmlFor="email">User Name</label>

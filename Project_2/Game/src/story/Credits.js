@@ -249,10 +249,10 @@ export default function credits() {
 </div>
 <form  className="flex justify-content max-w-xs mx-auto mt-5" >
                  <div className="pt-5">
-                        <div class="text-center">
+
+                        <div class="text-center">   
                             <h1 className="font-link">Zombie Apocalypse</h1>
                         </div>
-
                         <br></br>
             <div>
         <h4><br></br>
@@ -268,13 +268,13 @@ export default function credits() {
         <div class="profileLinksFlex">
         <FooterLink href="https://app.revature.com/profile/SpaceBoiLunkey/3861ae65172350fc9a47e8a8d538c836" type="submit" className="btn btn-danger btn-lg btn-block mt-5">Kalvin's Portfolio</FooterLink>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+                    
         <FooterLink href="https://app.revature.com/profile/DonaldLopez/a3ef8ffbdd145a2f70e088e6385feaad" type="submit" className="btn btn-danger btn-lg btn-block mt-5"> Donald's Portfolio</FooterLink>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+        
         <FooterLink href="/portfolioLinkHere" type="submit" className="btn btn-danger btn-lg btn-block mt-5">Drael's Portfolio</FooterLink>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+                   
         <FooterLink href="https://app.revature.com/profile/Vara78/99cd4e5906b72fd0e8198208cc9cd829" type="submit" className="btn btn-danger btn-lg btn-block mt-5">Eric's Portfolio</FooterLink>
         </div>
         </h4>
