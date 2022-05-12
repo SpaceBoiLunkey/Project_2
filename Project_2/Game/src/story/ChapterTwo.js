@@ -7,7 +7,7 @@ export default function ChapterTwo() {
   return (
     <form className="flex justify-content max-w-xs mx-auto mt-5">
       <div className="pt-5">
-        <div class="text-center">
+        <div className="text-center">
           <h1 className="font-link">Zombie Apocalypse</h1>
         </div>
 
@@ -48,7 +48,7 @@ export default function ChapterTwo() {
             gun and explore the area of the ship to see what's going on, or you
             could play it safe and go back to your room to quarantine. Do you...
           </h4>
-          <div class="container">
+          <div className="container">
             <Link
               to="/ChapterFour"
               type="submit"

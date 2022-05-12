@@ -53,7 +53,7 @@ export default function Login() {
   const renderForm = (
     <>
       <div className="col text-center ">
-        <span class="bg-dark d-inline-block p-5 mr-3 rounded">
+        <span className="bg-dark d-inline-block p-5 mr-3 rounded">
           <div className="">
             <label>
               <h5>Email</h5>
@@ -108,7 +108,7 @@ export default function Login() {
   return (
     <form className="flex justify-content max-w-xs mx-auto mt-5 mb-5 ">
       <div className="pt-5 mt-5">
-        <div class="text-center">
+        <div className="text-center">
           <h1 className="font-link ">Zombie Apocalypse</h1>
           <br></br>
 

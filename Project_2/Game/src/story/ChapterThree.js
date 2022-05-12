@@ -7,7 +7,7 @@ export default function ChapterThree() {
   return (
     <form className="flex justify-content max-w-xs mx-auto mt-5">
       <div className="pt-5">
-        <div class="text-center">
+        <div className="text-center">
           <h1 className="font-link">Zombie Apocalypse</h1>
         </div>
 
@@ -31,7 +31,7 @@ export default function ChapterThree() {
             from any random attack or threat. You could go back to sleep, and
             accept your fate, or open the door to see what's up.
           </h4>
-          <div class="container">
+          <div className="container">
             <Link
               to="/ChapterSix"
               type="submit"

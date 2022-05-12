@@ -7,7 +7,7 @@ export default function ChapterSix() {
   return (
     <form className="flex justify-content max-w-xs mx-auto mt-5">
       <div className="pt-5">
-        <div class="text-center">
+        <div className="text-center">
           <h1 className="font-link">Zombie Apocalypse</h1>
         </div>
 
@@ -45,7 +45,7 @@ export default function ChapterSix() {
             crewmate and the woman, or you can wait for them to get to the pod
             and hope that they don't die along the way. Do you...
           </h4>
-          <div class="container">
+          <div className="container">
             <Link
               to="/ChapterTwelve"
               type="submit"

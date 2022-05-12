@@ -7,7 +7,7 @@ export default function ChapterFourteen() {
   return (
     <form className="flex justify-content max-w-xs mx-auto mt-5">
       <div className="">
-        <div class="text-center">
+        <div className="text-center">
           <h1 className="font-link">Zombie Apocalypse</h1>
         </div>
 
@@ -36,7 +36,7 @@ export default function ChapterFourteen() {
             human flesh. She bites you, and you live out the rest of your days
             as a space zombie. <br></br>Ending 5/10
           </h4>
-          <div class="container">
+          <div className="container">
             <Link
               to="/Start"
               type="submit"

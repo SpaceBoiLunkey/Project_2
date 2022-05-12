@@ -7,7 +7,7 @@ export default function ChapterTen() {
   return (
     <form className="flex justify-content max-w-xs mx-auto mt-5">
       <div className="">
-        <div class="text-center">
+        <div className="text-center">
           <h1 className="font-link">Zombie Apocalypse</h1>
         </div>
 
@@ -17,7 +17,7 @@ export default function ChapterTen() {
           style={{ backgroundImage: `url(${background})` }}
         ></div>
         <div>
-          <div class="container">
+          <div className="container">
             <h4>
               <br></br>
               You decide to go with the man to fight off the zombies. You know

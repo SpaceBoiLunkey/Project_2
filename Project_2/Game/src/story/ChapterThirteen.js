@@ -7,7 +7,7 @@ export default function ChapterThirteen() {
   return (
     <form className="flex justify-content max-w-xs mx-auto mt-5">
       <div className="">
-        <div class="text-center">
+        <div className="text-center">
           <h1 className="font-link">Zombie Apocalypse</h1>
         </div>
 
@@ -27,7 +27,7 @@ export default function ChapterThirteen() {
             them with the amount of time you have. Your other option is to
             jettison the pod and escape with your safety. Do you...
           </h4>
-          <div class="container">
+          <div className="container">
             <Link
               to="/ChapterEighteen"
               type="submit"

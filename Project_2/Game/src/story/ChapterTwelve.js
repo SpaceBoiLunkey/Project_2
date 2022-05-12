@@ -7,7 +7,7 @@ export default function ChapterTwelve() {
   return (
     <form className="flex justify-content max-w-xs mx-auto mt-5">
       <div className="">
-        <div class="text-center">
+        <div className="text-center">
           <h1 className="font-link">Zombie Apocalypse</h1>
         </div>
 
@@ -27,7 +27,7 @@ export default function ChapterTwelve() {
             drift in space. Your selfishness ends up betraying you, and you are
             left to drift for all eternity. <br></br>Ending 4/10
           </h4>
-          <div class="container">
+          <div className="container">
             <Link
               to="/Start"
               type="submit"

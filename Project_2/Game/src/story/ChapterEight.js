@@ -7,7 +7,7 @@ export default function ChapterEight() {
   return (
     <form className="flex justify-content max-w-xs mx-auto mt-5">
       <div className="pt-5">
-        <div class="text-center">
+        <div className="text-center">
           <h1 className="font-link">Zombie Apocalypse</h1>
         </div>
 
@@ -37,7 +37,7 @@ export default function ChapterEight() {
             You're too weak to fight, and your death comes slowly and painfully.
             <br></br>Ending 2/10
           </h4>
-          <div class="container">
+          <div className="container">
             <Link
               to="/Start"
               type="submit"

@@ -7,7 +7,7 @@ export default function ChapterNineteen() {
   return (
     <form className="flex justify-content max-w-xs mx-auto mt-5">
       <div className="pt-5">
-        <div class="text-center">
+        <div className="text-center">
           <h1 className="font-link">Zombie Apocalypse</h1>
         </div>
 
@@ -19,7 +19,7 @@ export default function ChapterNineteen() {
         <div>
           <br></br>
           <br></br>
-          <div class="container">
+          <div className="container">
             <h4>
               You stop to wait for them, because you're not heartless. They
               somehow make it past the zombies without any incident, and the
