@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* base styles */
+body {
+  min-height: 100vh;
+
+  font-weight: 400;
+  font-family: sans-serif;
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    #4ff695,
+    #c471ed,
+    #720b89
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    #4ff695,
+    #834b9f,
+    #490758
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+  font-size: 600%;
+  color: rgb(117, 42, 121);
+}
+h2 {
+  font-size: '';
+  color: rgb(168, 186, 5);
+}
+h3 {
+  font-size: 200%;
+  color: rgb(54, 24, 87);
+}
+h4 {
+  font-size: '';
+  color: rgb(135, 225, 176);
+}
+h5 {
+  font-size: '';
+  color: rgb(135, 225, 176);
+}
+p {
+  font-size: 120%;
+  color: rgb(34, 5, 93);
+}
+
+.App {
+  max-width: 1460px;
+  margin: 40px auto;
+  margin-top: 90px;
+}
+.bg {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pg {
+  height: 60vh;
+  background-position: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fade-in {
+  transition: opacity 1s ease;
+}
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.font-link {
+  font-family: 'Hanalei Fill', cursive;
+}
+a {
+  text-decoration: none;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.row.center {
+  align-items: center;
+}
+.col-1 {
+  flex: 1;
+}
+.col-2 {
+  flex: 2;
+}
+.block {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+.text-right {
+  text-align: right;
+}
+img.small {
+  max-height: 35rem;
+}
+button {
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #404040 solid;
+  background-color: #f0c040;
+  width: auto;
+  cursor: pointer;
+}
+button.add {
+  background-color: #40c0f0;
+  width: 1.5rem;
+}
+button.remove {
+  background-color: #f04040;
+  width: 1.5rem;
+}
+button.badge {
+  background-color: #f04040;
+  border: none;
+  color: #ffffff;
+  width: 1.5rem;
+}
+.navbar .navbar-nav .nav-link:hover {
+  background-color: #b772dd;
+  color: #fff;
+}
+
+.profileLinksFlex {
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+}
+
+.profilePhoto {
+  max-height: 200px;
+  padding: 1em;
+}
+
+.portfolioPhotos {
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+}
