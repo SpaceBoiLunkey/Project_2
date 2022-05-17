@@ -22,7 +22,7 @@ function Community() {
       <BlackBar>
         <Head>
           <Link
-            to="/PopForm"
+            to="/PopUpForm"
             type="submit"
             className="btn btn-success btn-lg btn-block"
           >

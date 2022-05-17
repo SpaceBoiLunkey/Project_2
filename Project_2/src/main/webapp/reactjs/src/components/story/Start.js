@@ -1,10 +1,12 @@
 import React from 'react';
-import background from './img/zombie.png';
+import background from '../img/zombie.png';
 import { Link } from 'react-router-dom';
-import '../Page.css';
+//import './Page.css';
 
-function Start() {
+export default function Start() {
+  
   return (
+    
     <div className="col text-center pt-5">
       <h1 className="font-link">Zombie Apocalypse</h1>
       <br></br>
@@ -35,4 +37,3 @@ function Start() {
   );
 }
 
-export default Start;

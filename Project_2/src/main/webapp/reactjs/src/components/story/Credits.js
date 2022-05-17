@@ -19,7 +19,7 @@ import drael from "../img/drael.jpg";
 import eric from "../img/eric.jpg";
 import {
   FooterLink,
-  } from "../components/FooterStyles";
+  } from "../FooterStyles";
 export default function credits() {
   return (
       <container>
@@ -258,7 +258,7 @@ export default function credits() {
         <h4><br></br>
         "Zombie Apocalypse: In Space" was written by Kalvin McClure of Zombie Apocalypse Inc. Donald Lopez edited the story. Together, the two of them dreamed up the concept of the game and laid the foundation for the website.
         <br></br><br></br>
-        Drael Davidson and Eric Vara helped build the website alongside Donald and Kalvin. Eric handled the backend database while Drael helped build a lot of the community pages with Donald.<br></br>
+        Drael Davidson and Eric Vara helped build the website alongside Donald and Kalvin. Eric and Donald handled the backend database while Drael helped build a lot of the community pages with Donald.<br></br>
         <div className="portfolioPhotos">
                     <img src={kal} className="profilePhoto" alt="Kalvin's Logo" />
                     <img src={donald} className="profilePhoto" alt="Donald's Logo" />

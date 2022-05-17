@@ -63,6 +63,10 @@ const Register = (props) => {
 
   return (
     <div>
+     
+        <div className="text-center">
+        <h1 className="font-link mt-5 mb-5">Zombie Apocalypse</h1>
+        </div>
       <div style={{ display: show ? "block" : "none" }}>
         <MyToast show={show} message={message} type={"success"} />
       </div>

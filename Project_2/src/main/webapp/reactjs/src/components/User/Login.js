@@ -9,6 +9,7 @@ import {
   FormControl,
   Button,
   Alert,
+  Container,
 } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -56,8 +57,12 @@ const Login = (props) => {
   };
 
   return (
-    <Row className="justify-content-md-center">
-      <Col xs={5}>
+    <Container>
+        <div className="text-center mt-5">
+        <h1 className="font-link">Zombie Apocalypse</h1>
+        </div>
+  <Row className="justify-content-md-center mt-5">
+      <Col xs={6}>
         {show && props.message && (
           <Alert variant="success" onClose={() => setShow(false)} dismissible>
             {props.message}
@@ -68,6 +73,7 @@ const Login = (props) => {
             {error}
           </Alert>
         )}
+      
         <Card className={"border border-dark bg-dark text-white"}>
           <Card.Header>
             <FontAwesomeIcon icon={faSignInAlt} /> Login
@@ -139,6 +145,7 @@ const Login = (props) => {
         </Card>
       </Col>
     </Row>
+    </Container>
   );
 };
 

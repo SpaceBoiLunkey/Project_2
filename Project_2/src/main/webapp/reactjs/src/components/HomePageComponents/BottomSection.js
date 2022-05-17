@@ -6,11 +6,11 @@ import {
   TextInBoxes,
   WhiteBoxes,
 } from './HomeStyles';
-
 import help from './HomeImg/help.png';
 import spaceSleep from './HomeImg/spaceSleep.png';
 import zombie from './HomeImg/zombie.png';
 import { Link } from 'react-router-dom';
+
 
 const HomeBoxes = () => {
   return (
@@ -26,7 +26,7 @@ const HomeBoxes = () => {
         </IndCol>
 
         <IndCol>
-          <Link to="/UserRegistration">
+          <Link to="/Register">
             <WhiteBoxes>
               <TextInBoxes>
                 CREATE AN <br />

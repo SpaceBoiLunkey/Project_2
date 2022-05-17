@@ -24,10 +24,10 @@ const NavigationBar = () => {
       <div className="mr-auto"></div>
       <Nav className="navbar-right">
         <Link to={"register"} className="nav-link">
-          <FontAwesomeIcon icon={faUserPlus} /> Register
+          <FontAwesomeIcon icon={faUserPlus} /><h4>Register</h4>
         </Link>
         <Link to={"login"} className="nav-link">
-          <FontAwesomeIcon icon={faSignInAlt} /> Login
+          <FontAwesomeIcon icon={faSignInAlt} /><h4>Login</h4>
         </Link>
       </Nav>
     </>
@@ -36,33 +36,33 @@ const NavigationBar = () => {
     <>
       <Nav className="mr-auto font-link">
         <Link to={"Store"} className="nav-link">
-          STORE
+        <h4>Store</h4>
         </Link>
         <Link to={"Community"} className="nav-link">
-          COMMUNITY
+        <h4>Community</h4>
         </Link>
-        <Link to={"Home"} className="nav-link">
-          SUPPORT
+        <Link to={"Support"} className="nav-link">
+        <h4>Support</h4>
         </Link>
       </Nav>
       <Nav className="navbar-right">
-        <Link to={"logout"} className="nav-link" onClick={logout}>
-          <FontAwesomeIcon icon={faSignOutAlt} /> Logout
+        <Link to={"Home"} className="nav-link" onClick={logout}>
+          <FontAwesomeIcon icon={faSignOutAlt} /><h4>Logout</h4>
         </Link>
       </Nav>
     </>
   );
 
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar className="font-link" bg="dark" variant="dark">
       <Link to={auth.isLoggedIn ? "home" : ""} className="navbar-brand">
-        <img
+        <h4><img
           src="./img/ZA.png"
-          width="50"
-          height="50"
+          width="90"
+          height="90"
           alt="brand"
         />{" "}
-        Zombie Apocalypse
+        Zombie Apocalypse</h4>
       </Link>
       {auth.isLoggedIn ? userLinks : guestLinks}
     </Navbar>
