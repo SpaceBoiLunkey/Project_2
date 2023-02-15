@@ -1,0 +1,10 @@
+.App {
+    width: 2580px;
+    align-content: center;
+    content: flex;
+   
+}
+.container {
+    padding-right: 1500px;
+    justify-self: unset;
+}
