@@ -16,11 +16,11 @@ const Home = () => {
 
   return (
     <div>
-    <Alert>
+    <Alert className="font-link">
       Welcome {auth.username}
     </Alert>
-    <form className="flex justify-content max-w-xs mx-auto mt-5 ">
-    <h1 className="pt-5 text-center font-link">Zombie Apocalypse</h1>
+    <form className="flex justify-content max-w-xs mx-auto ">
+   
     <div>
       <TopComponent />
     </div>

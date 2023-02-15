@@ -80,7 +80,7 @@ const TopSection = () => {
           </IndCol>
 
           <IndCol>
-            <Link to="/UserRegistration">
+            <Link to="/Register">
               <WhiteBoxes>
                 <BoxText>
                   <b>WANT MORE GAMES?</b>
